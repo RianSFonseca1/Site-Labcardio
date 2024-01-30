@@ -1,0 +1,622 @@
+<!doctype html>
+<html class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet">
+</head>
+
+<body class="scroll-smooth">
+
+    <!-- Navbar -->
+    <nav class="m-4 mt-0 border-2 space-y-2 border-gray-100 rounded-xl shadow-xl overflow-hidden">
+
+        <!-- Borda Superior gradiente -->
+        <div class="p-1 bg-gradient-to-r to-Laranja-2 from-Laranja-4"></div>
+
+        <!-- Pré Navbar 1/2 -->
+        <div class="flex justify-center w-full h-24">
+            <!-- Div Logo-->
+            <div class="">
+                <a href="https://flowbite.com/" class="items-center space-x-3 rtl:space-x-reverse">
+                    <img src="../img/Logo-labcardio-final.png" class="h-full" alt="" />
+                </a>
+            </div>
+        </div>
+
+        <!-- Navbar 2/2-->
+        <div class="flex flex-row relative bg-white">
+            <!-- Links do Navbar/Menu Dropdown-->
+            <div class="flex-row hidden items-center w-full justify-center md:flex" id="navbar-default">
+                <ul
+                    class="font-medium space-x-4 flex p-2 items-center rounded-lg md:flex-row rtl:space-x-reverse md:scale-75 md:space-x-2 lg:scale-100">
+                    <!-- Link para "Sobre nós" -->
+                    <li>
+                        <a href="">
+                            <button
+                                class="relative flex h-[50px] w-40 space-x-2 items-center justify-center rounded-lg overflow-hidden bg-white text-gray-500 transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-gradient-to-r to-Laranja-2 from-Laranja-4 before:duration-500 before:ease-out hover:text-white hover:before:h-56 hover:before:w-56">
+                                <svg class="relative w-auto h-6" xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+
+                                <span class="relative z-10">Institucional</span>
+                            </button>
+                        </a>
+                    </li>
+                    <!-- Link para "Convênios" -->
+                    <li>
+                        <a href="">
+                            <button
+                                class="relative flex h-[50px] w-40 space-x-2 items-center justify-center rounded-lg overflow-hidden bg-white text-gray-500 transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-gradient-to-r to-Laranja-2 from-Laranja-4 before:duration-500 before:ease-out hover:text-white hover:before:h-56 hover:before:w-56">
+                                <svg class="relative w-auto h-6" xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                                </svg>
+
+                                <span class="relative z-10">Exames</span>
+                            </button>
+                        </a>
+                    </li>
+                    <!-- Link para "Unidades"-->
+                    <li>
+                        <a href="">
+                            <button
+                                class="relative flex h-[50px] w-40 space-x-2 items-center justify-center rounded-lg overflow-hidden bg-white text-gray-500 transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-gradient-to-r to-Laranja-2 from-Laranja-4 before:duration-500 before:ease-out hover:text-white hover:before:h-56 hover:before:w-56">
+                                <svg class="relative w-auto h-6" xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                                </svg>
+
+                                <span class="relative z-10">Convênios</span>
+                            </button>
+                        </a>
+                    </li>
+                    <!-- Link para "Exames" -->
+                    <li>
+                        <a href="">
+                            <button
+                                class="relative flex h-[50px] w-40 space-x-2 items-center justify-center rounded-lg overflow-hidden bg-white text-gray-500 transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-gradient-to-r to-Laranja-2 from-Laranja-4 before:duration-500 before:ease-out hover:text-white hover:before:h-56 hover:before:w-56">
+                                <svg class="relative w-auto h-6" xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                </svg>
+
+                                <span class="relative z-10">Unidades</span>
+                            </button>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="">
+                            <button
+                                class="relative flex h-[50px] w-40 space-x-2 items-center justify-center rounded-lg overflow-hidden bg-white text-gray-500 transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-gradient-to-r to-Laranja-2 from-Laranja-4 before:duration-500 before:ease-out hover:text-white hover:before:h-56 hover:before:w-56">
+                                <svg class="relative w-auto h-6" xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                </svg>
+
+                                <span class="relative z-10">Contate-nos</span>
+                            </button>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="">
+                            <button
+                                class="relative flex group h-[50px] w-40 space-x-2 items-center justify-center rounded-lg overflow-hidden bg-white text-gray-500 transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-gradient-to-r to-Laranja-2 from-Laranja-4 before:duration-500 before:ease-out hover:text-white hover:before:h-56 hover:before:w-56">
+                                <svg class="relative w-auto h-6" xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+                                </svg>
+
+                                <span class="relative z-10">Resultados</span>
+                            </button>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+        <!-- Menu dropdown ativado por responsividade (Oculto em telas maiores) -->
+        <div class="w-full flex justify-center sm:pb-4 md:hidden">
+            <!-- Modal toggle -->
+            <button data-modal-target="default-modal" data-modal-toggle="default-modal"
+                class="flex flex-row space-x-2 text-white bg-gray-400 hover:bg-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
+                type="button">
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M1 1h15M1 7h15M1 13h15" />
+                </svg>
+                <span>Menu</span>
+            </button>
+
+            <!-- Main modal -->
+            <div id="default-modal" tabindex="-1" aria-hidden="true"
+                class="hidden overflow-y-auto overflow-x-hidden fixed -top-14 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+                <div class="relative p-4 w-3/5 max-w-2xl max-h-full">
+                    <!-- Modal content -->
+                    <div class="relative bg-white rounded-lg shadow">
+                        <!-- Modal header -->
+                        <div class="flex items-center justify-between p-4 border-b rounded-t">
+                            <h3 class="text-xl font-semibold text-Laranja-4">
+                                Menu
+                            </h3>
+                            <button type="button"
+                                class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                                data-modal-hide="default-modal">
+                                <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                    viewBox="0 0 14 14">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                                </svg>
+                                <span class="sr-only">Close modal</span>
+                            </button>
+                        </div>
+
+                        <!-- Modal body -->
+                        <div class="flex justify-center p-4 rounded-t">
+                            <ul class="font-medium flex flex-col p-2 items-center justify-center rounded-lg">
+                                <!-- Link para "Sobre nós" -->
+                                <li>
+                                    <a href="">
+                                        <button
+                                            class="relative flex h-[50px] w-40 items-center justify-center rounded-lg text-gray-500">
+                                            <span class="relative z-10">Institucional</span>
+                                        </button>
+                                    </a>
+                                </li>
+                                <!-- Link para "Convênios" -->
+                                <li>
+                                    <a href="">
+                                        <button
+                                            class="relative flex h-[50px] w-40 items-center justify-center rounded-lg text-gray-500">
+                                            <span class="relative z-10">Exames</span>
+                                        </button>
+                                    </a>
+                                </li>
+                                <!-- Link para "Unidades"-->
+                                <li>
+                                    <a href="">
+                                        <button
+                                            class="relative flex h-[50px] w-40 items-center justify-center rounded-lg text-gray-500">
+                                            <span class="relative z-10">Convênios</span>
+                                        </button>
+                                    </a>
+                                </li>
+                                <!-- Link para "Exames" -->
+                                <li>
+                                    <a href="">
+                                        <button
+                                            class="relative flex h-[50px] w-40 items-center justify-center rounded-lg text-gray-500">
+                                            <span class="relative z-10">Unidades</span>
+                                        </button>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="">
+                                        <button
+                                            class="relative flex h-[50px] w-40 items-center justify-center rounded-lg text-gray-500">
+                                            <span class="relative z-10">Contate-nos</span>
+                                        </button>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="">
+                                        <button
+                                            class="relative flex h-[50px] w-40 items-center justify-center rounded-lg text-gray-500">
+                                            <span class="relative z-10">Resultados</span>
+                                        </button>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </nav>
+
+    <!-- Seção Carrossel de Imagens -->
+    <section id="default-carousel" class="relative w-full" data-carousel="slide">
+        <!-- Carousel wrapper -->
+        <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+            <!-- Item 1 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="../img/img-1.jpg"
+                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            <!-- Item 2 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="../img/img-2.jpg"
+                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            <!-- Item 3 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="../img/img-3.jpg"
+                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            <!-- Item 4 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="../img/img-4.jpg"
+                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            <!-- Item 5 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="../img/img-5.jpg"
+                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+        </div>
+        <!-- Slider indicators -->
+        <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+            <button type="button" class="w-3 h-3 rounded-full bg-black" aria-current="true" aria-label="Slide 1"
+                data-carousel-slide-to="0"></button>
+            <button type="button" class="w-3 h-3 rounded-full bg-blue-600" aria-current="false" aria-label="Slide 2"
+                data-carousel-slide-to="1"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+                data-carousel-slide-to="2"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4"
+                data-carousel-slide-to="3"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5"
+                data-carousel-slide-to="4"></button>
+        </div>
+
+
+        <!-- Slider controls -->
+        <button type="button"
+            class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-prev>
+            <span
+                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+                <svg class="w-4 h-4 text-Laranja-4 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M5 1 1 5l4 4" />
+                </svg>
+                <span class="sr-only">Previous</span>
+            </span>
+        </button>
+        <button type="button"
+            class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-next>
+            <span
+                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg class="w-4 h-4 text-Laranja-4 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="m1 9 4-4-4-4" />
+                </svg>
+                <span class="sr-only">Next</span>
+            </span>
+        </button>
+    </section>
+
+    <!-- Seção "O Labcardio" (Breve apresentação, com imagens do ambiente) -->
+    <section class="w-full h-auto mt-6 p-10 justify-center bg-Laranja-4">
+
+        <!-- O Labcardio -->
+        <div
+            class="w-full h-auto pt-12 flex md:flex-row bg-Laranja-4 border border-opacity-15 border-orange-700 shadow-xl rounded-xl sm:flex-col">
+            <!-- Galeria -->
+            <div class="flex flex-col md:order-1 h-full md:w-2/3 sm:w-full sm:order-2 p-8">
+
+                <!-- Imagem Maior -->
+                <div id="imagemMaior"
+                    class="w-full md:h-auto p-4 rounded-lg overflow-hidden transition-opacity ease-in-out duration-500">
+                    <img class="flex bottom-20 h-auto w-full rounded-lg" src="../img/img-1.jpg" alt="">
+                </div>
+
+                <!-- Carrossel ativado por responsividade -->
+                <div
+                    class="flex overflow-x-auto p-4 rounded-lg inset-y-0 bg-gradient-to-tr from-Laranja-5 to-Laranja-3 md:hidden sm:flex">
+                    <!-- div das imagens -->
+                    <div class="flex space-x-4">
+                        <img src="../img/img-2.jpg" alt="Imagem 2" class="rounded-md w-36 h-auto"
+                            onclick="destacarImagem('../img/img-2.jpg')">
+                        <img src="../img/img-3.jpg" alt="Imagem 3" class="rounded-md w-36 h-auto"
+                            onclick="destacarImagem('../img/img-3.jpg')">
+                        <img src="../img/img-4.jpg" alt="Imagem 4" class="rounded-md w-36 h-auto"
+                            onclick="destacarImagem('../img/img-4.jpg')">
+                        <img src="../img/img-5.jpg" alt="Imagem 5" class="rounded-md w-36 h-auto"
+                            onclick="destacarImagem('../img/img-5.jpg')">
+                        <img src="../img/img-6.jpg" alt="Imagem 6" class="rounded-md w-36 h-auto"
+                            onclick="destacarImagem('../img/img-6.jpg')">
+                    </div>
+                </div>
+
+                <!-- Imagens Menores (Menu) -->
+                <div id="menuImagens"
+                    class="flex-row gap-4 ml-4 p-4 rounded-lg bg-gradient-to-tr from-Laranja-5 to-Laranja-3 sm:hidden md:flex ">
+                    <div class="h-32 w-52 transition-transform hover:scale-110"
+                        onclick="destacarImagem('../img/img-2.jpg')">
+                        <button
+                            class="h-full w-full rounded-lg focus:outline-none focus:ring-4 focus:ring-Laranja-3 focus:scale-90">
+                            <img class="h-full w-full object-cover rounded-lg" src="../img/img-2.jpg" alt="">
+                        </button>
+                    </div>
+                    <div class="h-32 w-52 transition-transform hover:scale-110"
+                        onclick="destacarImagem('../img/img-3.jpg')">
+                        <button
+                            class="h-full w-full rounded-lg focus:outline-none focus:ring-4 focus:ring-Laranja-3 focus:scale-90">
+                            <img class="h-full w-full object-cover rounded-lg" src="../img/img-3.jpg" alt="">
+                        </button>
+                    </div>
+                    <div class="h-32 w-52 transition-transform hover:scale-110"
+                        onclick="destacarImagem('../img/img-4.jpg')">
+                        <button
+                            class="h-full w-full rounded-lg focus:outline-none focus:ring-4 focus:ring-Laranja-3 focus:scale-90">
+                            <img class="h-full w-full object-cover rounded-lg" src="../img/img-4.jpg" alt="">
+                        </button>
+                    </div>
+                    <div class="h-32 w-52 transition-transform hover:scale-110"
+                        onclick="destacarImagem('../img/img-5.jpg')">
+                        <button
+                            class="h-full w-full rounded-lg focus:outline-none focus:ring-4 focus:ring-Laranja-3 focus:scale-90">
+                            <img class="h-full w-full object-cover rounded-lg" src="../img/img-5.jpg" alt="">
+                        </button>
+                    </div>
+                    <div class="h-32 w-52 transition-transform hover:scale-110"
+                        onclick="destacarImagem('../img/img-6.jpg')">
+                        <button
+                            class="h-full w-full rounded-lg focus:outline-none focus:ring-4 focus:ring-Laranja-3 focus:scale-90">
+                            <img class="h-full w-full object-cover rounded-lg" src="../img/img-6.jpg" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Script troca de imagens -->
+            <script>
+                // Modifique a função destacarImagem para ajustar a opacidade
+                function destacarImagem(novaImagem) {
+                    var imagemMaior = document.getElementById('imagemMaior');
+
+                    // Ajuste a opacidade para zero usando classes do Tailwind
+                    imagemMaior.classList.add('opacity-0');
+
+                    // Aguarde um curto período de tempo (pode ajustar conforme necessário)
+                    setTimeout(function () {
+                        // Troque a imagem
+                        imagemMaior.querySelector('img').src = novaImagem;
+
+                        // Remova a classe de opacidade para iniciar a transição de volta para 1
+                        imagemMaior.classList.remove('opacity-0');
+                    }, 100);
+                }
+            </script>
+
+            <!-- Texto -->
+            <div class="flex flex-col md:order-2 md:w-1/3 sm:w-full sm:order-1 items-center lg:scale-100 md:scale-75">
+                <h1 class="font-extrabold text-white text-3xl text-nowrap p-6 pb-2 mt-4 md:text-xs lg:text-lg">
+                    O Labcardio</h1>
+                <p class="text-justify text-white font-semibold p-6 pt-0 md:text-xs lg:text-lg">
+                    O Labcardio é um laboratório de análises clínicas que se preocupa com a saúde e bem-estar de seus
+                    pacientes. Oferecemos
+                    uma ampla gama de exames laboratoriais, realizados com alta qualidade e precisão.
+
+                    Nossa equipe de profissionais é altamente qualificada e experiente, e está sempre pronta para
+                    atender às necessidades de
+                    nossos pacientes. Nos preocupamos em fornecer um atendimento humanizado e personalizado, para que
+                    você se sinta
+                    confortável e seguro durante todo o processo de realização dos exames.
+
+                    Aqui no Labcardio, você encontra:
+
+                    Exames laboratoriais com alta qualidade e precisão
+                    Equipe de profissionais altamente qualificados e experientes
+                    Atendimento humanizado e personalizado
+                    Localização de fácil acesso
+                    Por isso, se você está procurando um laboratório de análises clínicas que se preocupa com você, o
+                    Labcardio é a melhor
+                    opção.
+
+                </p>
+            </div>
+        </div>
+
+
+
+        </div>
+    </section>
+
+    <!-- Seção Carrossel de Cards -->
+    <section class="w-full flex flex-col pb-20 bg-slate-50 justify-center">
+        <!-- Título da sessão -->
+        <div class="flex flex-col items-center">
+            <h1
+                class="p-6 text-center text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r to-Laranja-4 from-Laranja-2">
+                Principais Serviços
+            </h1>
+            <div class="mb-4 bg-gray-50 w-80 p-0.5 border-b-2 shadow-xl rounded-xl"></div>
+        </div>
+        <!-- Carrossel de Cards -->
+        <div class="flex px-4 flex-grow sm:w- border-2 m-2">
+            <div class="mx-auto w-full md:w-4/5 px-4">
+                <!---->
+                <div class=" my-8">
+                    <div id="scrollContainer"
+                        class="flex flex-no-wrap overflow-x-scroll scrolling-touch items-start pb-8">
+                        <div
+                            class="flex-none md:w-1/3 sm:w-72 mr-8 md:pb-4 border rounded-lg max-w-sm overflow-hidden shadow-lg">
+                            <img class="w-full" src="../img/img-4.jpg" alt="Exame">
+                            <div class="px-6 py-4">
+                                <div class="font-bold text-xl mb-2">Exame A</div>
+                                <p class="text-gray-700 text-base">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia,
+                                    nulla! Maiores et perferendis
+                                    eaque, exercitationem praesentium nihil.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="flex-none md:w-1/3 sm:w-72 mr-8 md:pb-4 border rounded-lg max-w-sm overflow-hidden shadow-lg">
+                            <img class="w-full" src="../img/img-4.jpg" alt="Exame">
+                            <div class="px-6 py-4">
+                                <div class="font-bold text-xl mb-2">Exame B</div>
+                                <p class="text-gray-700 text-base">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia,
+                                    nulla! Maiores et perferendis
+                                    eaque, exercitationem praesentium nihil.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="flex-none md:w-1/3 sm:w-72 mr-8 md:pb-4 border rounded-lg max-w-sm overflow-hidden shadow-lg">
+                            <img class="w-full" src="../img/img-4.jpg" alt="Exame">
+                            <div class="px-6 py-4">
+                                <div class="font-bold text-xl mb-2">Exame C</div>
+                                <p class="text-gray-700 text-base">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia,
+                                    nulla! Maiores et perferendis
+                                    eaque, exercitationem praesentium nihil.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="flex-none md:w-1/3 sm:w-72 mr-8 md:pb-4 border rounded-lg max-w-sm overflow-hidden shadow-lg">
+                            <img class="w-full" src="../img/img-4.jpg" alt="Exame">
+                            <div class="px-6 py-4">
+                                <div class="font-bold text-xl mb-2">Exame D</div>
+                                <p class="text-gray-700 text-base">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia,
+                                    nulla! Maiores et perferendis
+                                    eaque, exercitationem praesentium nihil.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="flex-none md:w-1/3 sm:w-72 mr-8 md:pb-4 border rounded-lg max-w-sm overflow-hidden shadow-lg">
+                            <img class="w-full" src="../img/img-4.jpg" alt="Exame">
+                            <div class="px-6 py-4">
+                                <div class="font-bold text-xl mb-2">Exame E</div>
+                                <p class="text-gray-700 text-base">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia,
+                                    nulla! Maiores et perferendis
+                                    eaque, exercitationem praesentium nihil.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="flex-none md:w-1/3 sm:w-72 mr-8 md:pb-4 border rounded-lg max-w-sm overflow-hidden shadow-lg">
+                            <img class="w-full" src="../img/img-4.jpg" alt="Exame">
+                            <div class="px-6 py-4">
+                                <div class="font-bold text-xl mb-2">Exame F</div>
+                                <p class="text-gray-700 text-base">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia,
+                                    nulla! Maiores et perferendis
+                                    eaque, exercitationem praesentium nihil.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="flex-none md:w-1/3 sm:w-72 mr-8 md:pb-4 border rounded-lg max-w-sm overflow-hidden shadow-lg">
+                            <img class="w-full" src="../img/img-4.jpg" alt="Exame">
+                            <div class="px-6 py-4">
+                                <div class="font-bold text-xl mb-2">Exame G</div>
+                                <p class="text-gray-700 text-base">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia,
+                                    nulla! Maiores et perferendis
+                                    eaque, exercitationem praesentium nihil.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Contate-nos -->
+    <section class="bg-Laranja-4" id="contact">
+        <footer class="">
+            <div class="w-full flex-col px-6 pt-16 lg:flex lg:px-10 xl:px-24">
+
+                <div class="cursor-default md:flex md:flex-row md:space-x-8 sm:flex-col">
+
+                    <div class="flex flex-row sm:justify-center">
+                        <img class="h-auto w-72 rounded-xl shadow-xl shadow-orange-700"
+                            src="../img/Logo-labcardio-final.png" alt="">
+                    </div>
+
+                    <div
+                        class="w-full mt-4 md:mt-0 flex md:flex-row md:space-x-6 lg:flex-nowrap lg:justify-start gap-4 sm:flex-col sm:space-x-0 ">
+
+                        <div class="flex flex-col flex-wrap w-1/3 pl-2 border-l-2 border-white sm:w-full">
+                            <div class="flex flex-row space-x-2">
+                                <svg class="text-indigo-600 w-5 h-7" xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" fill="none" viewBox="0 0 24 24" stroke="white">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                </svg>
+                                <h2 class="font-semibold text-white text-lg">Endereço</h2>
+                            </div>
+                            <span class="text-sm text-white">R. Desidério Brandão, 147 - Centro, Cruz das Almas -
+                                BA</span>
+                        </div>
+
+                        <div class="flex flex-col flex-wrap w-1/3 pl-2 border-l-2 border-white sm:w-full">
+                            <div class="flex flex-row space-x-2">
+                                <svg class="text-indigo-600 w-5 h-7" xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" fill="none" viewBox="0 0 24 24" stroke="white">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                                <h2 class="font-bold text-white text-lg">Horários</h2>
+                            </div>
+                            <span class="text-sm text-white">Segunda à Sexta: 06:30 - 18:00 | Sábado: 06:30 -
+                                12:00</span>
+                        </div>
+
+                        <div class="flex flex-col flex-wrap w-1/3 pl-2 border-l-2 border-white sm:w-full">
+                            <div class="flex flex-row space-x-2">
+                                <svg class="text-indigo-600 w-5 h-7" xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" fill="none" viewBox="0 0 24 24" stroke="white">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                </svg>
+
+                                <h2 class="font-bold text-white text-lg">Contato</h2>
+                            </div>
+                            <span class="text-sm text-white">contato@labcardio.com.br | (75) 3673-0000</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full mt-10 py-10 border-t border-zinc-200 font-inter text-center text-base text-white">
+                    ©
+                    2024 Labcardio - Todos os Direitos Reservados</div>
+
+            </div>
+        </footer>
+    </section>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+</body>
+
+</html>
