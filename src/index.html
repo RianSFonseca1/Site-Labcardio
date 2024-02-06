@@ -6,9 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./output.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://kit.fontawesome.com/2ac0a768c7.js" crossorigin="anonymous"></script>
+
 </head>
 
-<body>
+<body class="h-screen">
 
     <!-- Navbar -->
     <nav class="m-4 mt-0 border-2 space-y-2 border-gray-100 rounded-xl shadow-xl overflow-hidden">
@@ -49,7 +52,7 @@
                     </li>
                     <!-- Link para "Convênios" -->
                     <li>
-                        <a href="">
+                        <a href="/src/exames.html">
                             <button
                                 class="relative flex h-[50px] w-40 space-x-2 items-center justify-center rounded-lg overflow-hidden bg-white text-gray-500 transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-gradient-to-r to-Laranja-2 from-Laranja-4 before:duration-500 before:ease-out hover:text-white hover:before:h-56 hover:before:w-56">
                                 <svg class="relative w-auto h-6" xmlns="http://www.w3.org/2000/svg" width="24"
@@ -236,9 +239,9 @@
     </nav>
 
     <!-- Seção Carrossel de Imagens -->
-    <section id="default-carousel" class="relative w-full" data-carousel="slide">
+    <section id="default-carousel" class="relative w-full md:h-9/10 sm:h-5/12" data-carousel="slide">
         <!-- Carousel wrapper -->
-        <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+        <div class="relative h-full w-full overflow-hidden rounded-lg md:h-full">
             <!-- Item 1 -->
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
                 <img src="../img/img-1.jpg"
@@ -257,7 +260,8 @@
             <!-- Item 4 -->
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
                 <img src="../img/img-4.jpg"
-                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 scale-125"
+                    alt="...">
             </div>
             <!-- Item 5 -->
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
@@ -309,243 +313,511 @@
         </button>
     </section>
 
-    <!-- Seção "O Labcardio" (Breve apresentação, com imagens do ambiente) -->
-    <section class="w-full h-auto mt-6 p-10 justify-center bg-Laranja-4">
+    <!-- Seção "O que oferecemos" -->
+    <section class="w-full mt-4 h-auto bg-orange-500 border-t-2 mb-4">
+        <div class="p-1 bg-gradient-to-r to-Laranja-2 from-Laranja-4"></div>
+        <section class="bg-white dark:bg-gray-900">
+            <div class="container px-6 py-10 mx-auto">
 
-        <!-- O Labcardio -->
-        <div
-            class="w-full h-auto pt-12 flex md:flex-row bg-Laranja-4 border border-opacity-15 border-orange-700 shadow-xl rounded-xl sm:flex-col">
-            <!-- Galeria -->
-            <div class="flex flex-col md:order-1 h-full md:w-2/3 sm:w-full sm:order-2 p-8">
+                <div class="flex flex-col items-center">
+                    <h1
+                        class="p-6 text-center text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r to-Laranja-2 from-Laranja-4">
+                        O que oferecemos?
+                    </h1>
 
-                <!-- Imagem Maior -->
-                <div id="imagemMaior"
-                    class="w-full md:h-auto p-4 rounded-lg overflow-hidden transition-opacity ease-in-out duration-500">
-                    <img class="flex bottom-20 h-auto w-full rounded-lg" src="../img/img-1.jpg" alt="">
+                    <div
+                        class="mb-4 bg-gradient-to-r to-Laranja-2 from-Laranja-4 w-80 p-0.5 border-b-2 shadow-xl rounded-xl">
+                    </div>
+
                 </div>
 
-                <!-- Carrossel ativado por responsividade -->
+                <div class="flex flex-row mt-8 space-x-2">
+                    <div class="flex flex-col items-center p-6 space-y-3 text-center rounded-xl w-1/3">
+                        <svg class="w-20 h-20 text-orange-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor" viewBox="0 0 24 24">
+                            <path fill-rule="evenodd"
+                                d="M11.3 3.3a1 1 0 0 1 1.4 0l6 6 2 2a1 1 0 0 1-1.4 1.4l-.3-.3V19a2 2 0 0 1-2 2h-3a1 1 0 0 1-1-1v-3h-2v3c0 .6-.4 1-1 1H7a2 2 0 0 1-2-2v-6.6l-.3.3a1 1 0 0 1-1.4-1.4l2-2 6-6Z"
+                                clip-rule="evenodd" />
+                        </svg>
+
+                        <h1 class="text-xl font-semibold text-gray-500 capitalize dark:text-white">Atendimento
+                            Domiciliar</h1>
+
+                        <p class="text-gray-500 text-center">
+                            Realize seus exames sem precisar sair de casa, sem enfrentar filas, trânsito
+                            ou aglomerações com o nosso
+                            serviço de atendimento a domicílio. Consulte abaixo em quais localidades atendemos!
+                        </p>
+
+                        <a href="">
+                            <button
+                                class="relative flex h-[50px] text-Laranja-3 w-40 space-x-2 items-center justify-center rounded-lg overflow-hidden bg-white border-2 shadow-lg transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-gradient-to-r to-Laranja-2 from-Laranja-4 before:duration-500 before:ease-out hover:text-white hover:before:h-56 hover:before:w-56">
+                                <span class="relative z-10 font-semibold">Saiba mais</span>
+                            </button>
+                        </a>
+                    </div>
+
+                    <div class="flex flex-col items-center p-6 space-y-3 text-center border-x-2 border-gray-200 w-1/3">
+                        <svg class="w-20 h-20 text-orange-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor" viewBox="0 0 24 24">
+                            <path fill-rule="evenodd"
+                                d="M8 3c0-.6.4-1 1-1h6c.6 0 1 .4 1 1h2a2 2 0 0 1 2 2v15a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5c0-1.1.9-2 2-2h2Zm6 1h-4v2H9a1 1 0 0 0 0 2h6a1 1 0 1 0 0-2h-1V4Zm-3 8c0-.6.4-1 1-1h3a1 1 0 1 1 0 2h-3a1 1 0 0 1-1-1Zm-2-1a1 1 0 1 0 0 2 1 1 0 1 0 0-2Zm2 5c0-.6.4-1 1-1h3a1 1 0 1 1 0 2h-3a1 1 0 0 1-1-1Zm-2-1a1 1 0 1 0 0 2 1 1 0 1 0 0-2Z"
+                                clip-rule="evenodd" />
+                        </svg>
+
+                        <h1 class="text-xl font-semibold text-gray-500 capitalize">Resultados Online
+                        </h1>
+
+                        <p class="text-gray-500 text-center">
+                            Com o Labcardio, você tem acesso aos seus resultados de exames de
+                            forma rápida, segura e
+                            confidencial, a qualquer hora e em qualquer lugar. Acesse abaixo o serviço de resultados
+                            online!
+                        </p>
+
+                        <a href="">
+                            <button
+                                class="relative flex h-[50px] text-Laranja-3 w-40 space-x-2 items-center justify-center rounded-lg overflow-hidden bg-white border-2 shadow-lg transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-gradient-to-r to-Laranja-2 from-Laranja-4 before:duration-500 before:ease-out hover:text-white hover:before:h-56 hover:before:w-56">
+                                <span class="relative z-10 font-semibold">Saiba mais</span>
+                            </button>
+                        </a>
+
+                    </div>
+
+                    <div class="flex flex-col items-center p-6 space-y-3 text-center rounded-xl w-1/3">
+                        <svg class="w-20 h-20 text-orange-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor" viewBox="0 0 24 24">
+                            <path fill-rule="evenodd"
+                                d="M12 2a3 3 0 0 0-2.1.9l-.9.9a1 1 0 0 1-.7.3H7a3 3 0 0 0-3 3v1.2c0 .3 0 .5-.2.7l-1 .9a3 3 0 0 0 0 4.2l1 .9c.2.2.3.4.3.7V17a3 3 0 0 0 3 3h1.2c.3 0 .5 0 .7.2l.9 1a3 3 0 0 0 4.2 0l.9-1c.2-.2.4-.3.7-.3H17a3 3 0 0 0 3-3v-1.2c0-.3 0-.5.2-.7l1-.9a3 3 0 0 0 0-4.2l-1-.9a1 1 0 0 1-.3-.7V7a3 3 0 0 0-3-3h-1.2a1 1 0 0 1-.7-.2l-.9-1A3 3 0 0 0 12 2Zm3.7 7.7a1 1 0 1 0-1.4-1.4L10 12.6l-1.3-1.3a1 1 0 0 0-1.4 1.4l2 2c.4.4 1 .4 1.4 0l5-5Z"
+                                clip-rule="evenodd" />
+                        </svg>
+
+                        <h1 class="text-xl font-semibold text-gray-500 capitalize">Laboratório Confiável e Certificado
+                        </h1>
+
+                        <p class="text-gray-500 text-center">
+                            Somos referência em qualidade e segurança, oferecendo a você resultados
+                            precisos e confiáveis. Confira nossas certificações e leia sobre nossa história, missão e
+                            valores abaixo!
+                        </p>
+
+                        <a href="">
+                            <button
+                                class="relative flex h-[50px] text-Laranja-3 w-40 space-x-2 items-center justify-center rounded-lg overflow-hidden bg-white border-2 shadow-lg transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-gradient-to-r to-Laranja-2 from-Laranja-4 before:duration-500 before:ease-out hover:text-white hover:before:h-56 hover:before:w-56">
+                                <span class="relative z-10 font-semibold">Saiba mais</span>
+                            </button>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </section>
+
+    <!-- Seção "O Principais exames" -->
+    <section class="w-full h-auto flex flex-col items-center pb-16 bg-Laranja-4">
+
+        <!-- Galeria de Cards-->
+
+        <div class="container bg-white mt-6 rounded-lg shadow-lg pb-8">
+
+            <!-- Título -->
+            <div class="flex flex-col items-center">
+                <h1
+                    class="p-6 text-center text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r to-Laranja-2 from-Laranja-4">
+                    Exames mais procurados
+                </h1>
+
                 <div
-                    class="flex overflow-x-auto p-4 rounded-lg inset-y-0 bg-gradient-to-tr from-Laranja-5 to-Laranja-3 md:hidden sm:flex">
-                    <!-- div das imagens -->
-                    <div class="flex space-x-4">
-                        <img src="../img/img-2.jpg" alt="Imagem 2" class="rounded-md w-36 h-auto"
-                            onclick="destacarImagem('../img/img-2.jpg')">
-                        <img src="../img/img-3.jpg" alt="Imagem 3" class="rounded-md w-36 h-auto"
-                            onclick="destacarImagem('../img/img-3.jpg')">
-                        <img src="../img/img-4.jpg" alt="Imagem 4" class="rounded-md w-36 h-auto"
-                            onclick="destacarImagem('../img/img-4.jpg')">
-                        <img src="../img/img-5.jpg" alt="Imagem 5" class="rounded-md w-36 h-auto"
-                            onclick="destacarImagem('../img/img-5.jpg')">
-                        <img src="../img/img-6.jpg" alt="Imagem 6" class="rounded-md w-36 h-auto"
-                            onclick="destacarImagem('../img/img-6.jpg')">
+                    class="mb-4 bg-gradient-to-r to-Laranja-2 from-Laranja-4 w-80 p-0.5 border-b-2 shadow-xl rounded-xl">
+                </div>
+
+            </div>
+
+            <!-- Grid cards -->
+            <div class="grid grid-cols-3 grid-rows-3 gap-4 px-16 p-8">
+
+                <!-- Card 1 -->
+                <div class="flex flex-col bg-white border shadow-sm rounded-xl">
+                    <div
+                        class="relative h-full w-full p-0.5 shadow-lg bg-gradient-to-r from-Laranja-4 to-Laranja-2 rounded-xl">
+                        <div class="bg-white h-full w-full p-16 pt-8 rounded-xl">
+                            <div
+                                class="absolute p-3 -top-6 left-1/2 transform -translate-x-1/2 rounded-full bg-gradient-to-r from-Laranja-4 to-Laranja-2">
+                                <i class="fa-solid fa-vial-circle-check fa-lg" style="color: #ffffff;"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-gray-800 text-center border-b-2 border-gray-200 p-2">
+                                Exame A
+                            </h3>
+                            <p class="mt-2 text-gray-500 text-center">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum libero vel
+                                libero tristique.
+                            </p>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Imagens Menores (Menu) -->
-                <div id="menuImagens"
-                    class="flex-row gap-4 ml-4 p-4 rounded-lg bg-gradient-to-tr from-Laranja-5 to-Laranja-3 sm:hidden md:flex ">
-                    <div class="h-32 w-52 transition-transform hover:scale-110"
-                        onclick="destacarImagem('../img/img-2.jpg')">
-                        <button
-                            class="h-full w-full rounded-lg focus:outline-none focus:ring-4 focus:ring-Laranja-3 focus:scale-90">
-                            <img class="h-full w-full object-cover rounded-lg" src="../img/img-2.jpg" alt="">
-                        </button>
+                <!-- Card 1 -->
+                <div class="flex flex-col bg-white border shadow-sm rounded-xl">
+                    <div
+                        class="relative h-full w-full p-0.5 shadow-lg bg-gradient-to-r from-Laranja-4 to-Laranja-2 rounded-xl">
+                        <div class="bg-white h-full w-full p-16 pt-8 rounded-xl">
+                            <div
+                                class="absolute p-3 -top-6 left-1/2 transform -translate-x-1/2 rounded-full bg-gradient-to-r from-Laranja-4 to-Laranja-2">
+                                <i class="fa-solid fa-vial-circle-check fa-lg" style="color: #ffffff;"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-gray-800 text-center border-b-2 border-gray-200 p-2">
+                                Exame A
+                            </h3>
+                            <p class="mt-2 text-gray-500 text-center">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum libero vel
+                                libero tristique.
+                            </p>
+                        </div>
                     </div>
-                    <div class="h-32 w-52 transition-transform hover:scale-110"
-                        onclick="destacarImagem('../img/img-3.jpg')">
-                        <button
-                            class="h-full w-full rounded-lg focus:outline-none focus:ring-4 focus:ring-Laranja-3 focus:scale-90">
-                            <img class="h-full w-full object-cover rounded-lg" src="../img/img-3.jpg" alt="">
-                        </button>
+                </div>
+
+                <!-- Card 1 -->
+                <div class="flex flex-col bg-white border shadow-sm rounded-xl">
+                    <div
+                        class="relative h-full w-full p-0.5 shadow-lg bg-gradient-to-r from-Laranja-4 to-Laranja-2 rounded-xl">
+                        <div class="bg-white h-full w-full p-16 pt-8 rounded-xl">
+                            <div
+                                class="absolute p-3 -top-6 left-1/2 transform -translate-x-1/2 rounded-full bg-gradient-to-r from-Laranja-4 to-Laranja-2">
+                                <i class="fa-solid fa-vial-circle-check fa-lg" style="color: #ffffff;"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-gray-800 text-center border-b-2 border-gray-200 p-2">
+                                Exame B
+                            </h3>
+                            <p class="mt-2 text-gray-500 text-center">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum libero vel
+                                libero tristique.
+                            </p>
+                        </div>
                     </div>
-                    <div class="h-32 w-52 transition-transform hover:scale-110"
-                        onclick="destacarImagem('../img/img-4.jpg')">
-                        <button
-                            class="h-full w-full rounded-lg focus:outline-none focus:ring-4 focus:ring-Laranja-3 focus:scale-90">
-                            <img class="h-full w-full object-cover rounded-lg" src="../img/img-4.jpg" alt="">
-                        </button>
+                </div>
+
+                <!-- Card 1 -->
+                <div class="flex flex-col bg-white border shadow-sm rounded-xl">
+                    <div
+                        class="relative h-full w-full p-0.5 shadow-lg bg-gradient-to-r from-Laranja-4 to-Laranja-2 rounded-xl">
+                        <div class="bg-white h-full w-full p-16 pt-8 rounded-xl">
+                            <div
+                                class="absolute p-3 -top-6 left-1/2 transform -translate-x-1/2 rounded-full bg-gradient-to-r from-Laranja-4 to-Laranja-2">
+                                <i class="fa-solid fa-vial-circle-check fa-lg" style="color: #ffffff;"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-gray-800 text-center border-b-2 border-gray-200 p-2">
+                                Exame C
+                            </h3>
+                            <p class="mt-2 text-gray-500 text-center">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum libero vel
+                                libero tristique.
+                            </p>
+                        </div>
                     </div>
-                    <div class="h-32 w-52 transition-transform hover:scale-110"
-                        onclick="destacarImagem('../img/img-5.jpg')">
-                        <button
-                            class="h-full w-full rounded-lg focus:outline-none focus:ring-4 focus:ring-Laranja-3 focus:scale-90">
-                            <img class="h-full w-full object-cover rounded-lg" src="../img/img-5.jpg" alt="">
-                        </button>
+                </div>
+
+                <!-- Card 1 -->
+                <div class="flex flex-col bg-white border shadow-sm rounded-xl">
+                    <div
+                        class="relative h-full w-full p-0.5 shadow-lg bg-gradient-to-r from-Laranja-4 to-Laranja-2 rounded-xl">
+                        <div class="bg-white h-full w-full p-16 pt-8 rounded-xl">
+                            <div
+                                class="absolute p-3 -top-6 left-1/2 transform -translate-x-1/2 rounded-full bg-gradient-to-r from-Laranja-4 to-Laranja-2">
+                                <i class="fa-solid fa-vial-circle-check fa-lg" style="color: #ffffff;"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-gray-800 text-center border-b-2 border-gray-200 p-2">
+                                Exame D
+                            </h3>
+                            <p class="mt-2 text-gray-500 text-center">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum libero vel
+                                libero tristique.
+                            </p>
+                        </div>
                     </div>
-                    <div class="h-32 w-52 transition-transform hover:scale-110"
-                        onclick="destacarImagem('../img/img-6.jpg')">
-                        <button
-                            class="h-full w-full rounded-lg focus:outline-none focus:ring-4 focus:ring-Laranja-3 focus:scale-90">
-                            <img class="h-full w-full object-cover rounded-lg" src="../img/img-6.jpg" alt="">
-                        </button>
+                </div>
+
+                <!-- Card 1 -->
+                <div class="flex flex-col bg-white border shadow-sm rounded-xl">
+                    <div
+                        class="relative h-full w-full p-0.5 shadow-lg bg-gradient-to-r from-Laranja-4 to-Laranja-2 rounded-xl">
+                        <div class="bg-white h-full w-full p-16 pt-8 rounded-xl">
+                            <div
+                                class="absolute p-3 -top-6 left-1/2 transform -translate-x-1/2 rounded-full bg-gradient-to-r from-Laranja-4 to-Laranja-2">
+                                <i class="fa-solid fa-vial-circle-check fa-lg" style="color: #ffffff;"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-gray-800 text-center border-b-2 border-gray-200 p-2">
+                                Exame E
+                            </h3>
+                            <p class="mt-2 text-gray-500 text-center">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum libero vel
+                                libero tristique.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 1 -->
+                <div class="flex flex-col bg-white border shadow-sm rounded-xl">
+                    <div
+                        class="relative h-full w-full p-0.5 shadow-lg bg-gradient-to-r from-Laranja-4 to-Laranja-2 rounded-xl">
+                        <div class="bg-white h-full w-full p-16 pt-8 rounded-xl">
+                            <div
+                                class="absolute p-3 -top-6 left-1/2 transform -translate-x-1/2 rounded-full bg-gradient-to-r from-Laranja-4 to-Laranja-2">
+                                <i class="fa-solid fa-vial-circle-check fa-lg" style="color: #ffffff;"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-gray-800 text-center border-b-2 border-gray-200 p-2">
+                                Exame F
+                            </h3>
+                            <p class="mt-2 text-gray-500 text-center">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum libero vel
+                                libero tristique.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 1 -->
+                <div class="flex flex-col bg-white border shadow-sm rounded-xl">
+                    <div
+                        class="relative h-full w-full p-0.5 shadow-lg bg-gradient-to-r from-Laranja-4 to-Laranja-2 rounded-xl">
+                        <div class="bg-white h-full w-full p-16 pt-8 rounded-xl">
+                            <div
+                                class="absolute p-3 -top-6 left-1/2 transform -translate-x-1/2 rounded-full bg-gradient-to-r from-Laranja-4 to-Laranja-2">
+                                <i class="fa-solid fa-vial-circle-check fa-lg" style="color: #ffffff;"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-gray-800 text-center border-b-2 border-gray-200 p-2">
+                                Exame G
+                            </h3>
+                            <p class="mt-2 text-gray-500 text-center">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum libero vel
+                                libero tristique.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 1 -->
+                <div class="flex flex-col bg-white border shadow-sm rounded-xl">
+                    <div
+                        class="relative h-full w-full p-0.5 shadow-lg bg-gradient-to-r from-Laranja-4 to-Laranja-2 rounded-xl">
+                        <div class="bg-white h-full w-full p-16 pt-8 rounded-xl">
+                            <div
+                                class="absolute p-3 -top-6 left-1/2 transform -translate-x-1/2 rounded-full bg-gradient-to-r from-Laranja-4 to-Laranja-2">
+                                <i class="fa-solid fa-vial-circle-check fa-lg" style="color: #ffffff;"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-gray-800 text-center border-b-2 border-gray-200 p-2">
+                                Exame H
+                            </h3>
+                            <p class="mt-2 text-gray-500 text-center">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum libero vel
+                                libero tristique.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Script troca de imagens -->
-            <script>
-                // Modifique a função destacarImagem para ajustar a opacidade
-                function destacarImagem(novaImagem) {
-                    var imagemMaior = document.getElementById('imagemMaior');
-
-                    // Ajuste a opacidade para zero usando classes do Tailwind
-                    imagemMaior.classList.add('opacity-0');
-
-                    // Aguarde um curto período de tempo (pode ajustar conforme necessário)
-                    setTimeout(function () {
-                        // Troque a imagem
-                        imagemMaior.querySelector('img').src = novaImagem;
-
-                        // Remova a classe de opacidade para iniciar a transição de volta para 1
-                        imagemMaior.classList.remove('opacity-0');
-                    }, 100);
-                }
-            </script>
-
-            <!-- Texto -->
-            <div class="flex flex-col md:order-2 md:w-1/3 sm:w-full sm:order-1 items-center lg:scale-100 md:scale-75">
-                <h1 class="font-extrabold text-white text-3xl text-nowrap p-6 pb-2 mt-4 md:text-xs lg:text-lg">
-                    O Labcardio</h1>
-                <p class="text-justify text-white font-semibold p-6 pt-0 md:text-xs lg:text-lg">
-                    O Labcardio é um laboratório de análises clínicas que se preocupa com a saúde e bem-estar de seus
-                    pacientes. Oferecemos
-                    uma ampla gama de exames laboratoriais, realizados com alta qualidade e precisão.
-
-                    Nossa equipe de profissionais é altamente qualificada e experiente, e está sempre pronta para
-                    atender às necessidades de
-                    nossos pacientes. Nos preocupamos em fornecer um atendimento humanizado e personalizado, para que
-                    você se sinta
-                    confortável e seguro durante todo o processo de realização dos exames.
-
-                    Aqui no Labcardio, você encontra:
-
-                    Exames laboratoriais com alta qualidade e precisão
-                    Equipe de profissionais altamente qualificados e experientes
-                    Atendimento humanizado e personalizado
-                    Localização de fácil acesso
-                    Por isso, se você está procurando um laboratório de análises clínicas que se preocupa com você, o
-                    Labcardio é a melhor
-                    opção.
-
-                </p>
+            <div class="flex flex-col items-center mt-4">
+                <a href="">
+                    <button
+                        class="relative flex h-[50px] text-Laranja-3 w-56 items-center justify-center rounded-lg overflow-hidden bg-white border-2 shadow-lg transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-gradient-to-r to-Laranja-2 from-Laranja-4 before:duration-500 before:ease-out hover:text-white hover:before:h-56 hover:before:w-56">
+                        <span class="relative z-10 font-semibold">Ver todos os Exames</span>
+                    </button>
+                </a>
             </div>
-        </div>
-
-
-
         </div>
     </section>
 
-    <!-- Seção Carrossel de Cards -->
-    <section class="w-full flex flex-col pb-20 bg-slate-50 justify-center">
+    <!-- Seção Convenios -->
+    <section class="w-full flex flex-col items-center px-10  pb-16 bg-slate-100 justify-center">
         <!-- Título da sessão -->
-        <div class="flex flex-col items-center">
+        <div class="flex flex-col items-center mt-10">
             <h1
-                class="p-6 text-center text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r to-Laranja-4 from-Laranja-2">
-                Principais Serviços
+                class="p-6 text-center text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r to-Laranja-2 from-Laranja-4">
+                Convênios
             </h1>
-            <div class="mb-4 bg-gray-50 w-80 p-0.5 border-b-2 shadow-xl rounded-xl"></div>
+            <div class="mb-4 bg-gradient-to-r to-Laranja-2 from-Laranja-4 w-80 p-0.5 border-b-2 shadow-xl rounded-xl">
+            </div>
         </div>
+
         <!-- Carrossel de Cards -->
-        <div class="flex px-4 flex-grow sm:w- border-2 m-2">
-            <div class="mx-auto w-full md:w-4/5 px-4">
-                <!---->
-                <div class=" my-8">
-                    <div id="scrollContainer"
-                        class="flex flex-no-wrap overflow-x-scroll scrolling-touch items-start pb-8">
-                        <div
-                            class="flex-none md:w-1/3 sm:w-72 mr-8 md:pb-4 border rounded-lg max-w-sm overflow-hidden shadow-lg">
-                            <img class="w-full" src="../img/img-4.jpg" alt="Exame">
-                            <div class="px-6 py-4">
-                                <div class="font-bold text-xl mb-2">Exame A</div>
-                                <p class="text-gray-700 text-base">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia,
-                                    nulla! Maiores et perferendis
-                                    eaque, exercitationem praesentium nihil.
-                                </p>
-                            </div>
-                        </div>
+        <div class="relative swiper-container overflow-hidden w-full p-5 border-2 border-gray-100">
+            <div class="swiper-wrapper flex flex-row space-x-4 p-5">
 
-                        <div
-                            class="flex-none md:w-1/3 sm:w-72 mr-8 md:pb-4 border rounded-lg max-w-sm overflow-hidden shadow-lg">
-                            <img class="w-full" src="../img/img-4.jpg" alt="Exame">
-                            <div class="px-6 py-4">
-                                <div class="font-bold text-xl mb-2">Exame B</div>
-                                <p class="text-gray-700 text-base">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia,
-                                    nulla! Maiores et perferendis
-                                    eaque, exercitationem praesentium nihil.
-                                </p>
-                            </div>
-                        </div>
+                <!-- Card 1-->
+                <div
+                    class="p-5 swiper-slide card flex flex-col mt-6 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl w-96 ">
+                    <h5
+                        class="block mb-2 font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900 text-center">
+                        Convênio A
+                    </h5>
+                </div>
 
-                        <div
-                            class="flex-none md:w-1/3 sm:w-72 mr-8 md:pb-4 border rounded-lg max-w-sm overflow-hidden shadow-lg">
-                            <img class="w-full" src="../img/img-4.jpg" alt="Exame">
-                            <div class="px-6 py-4">
-                                <div class="font-bold text-xl mb-2">Exame C</div>
-                                <p class="text-gray-700 text-base">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia,
-                                    nulla! Maiores et perferendis
-                                    eaque, exercitationem praesentium nihil.
-                                </p>
-                            </div>
-                        </div>
+                <!-- Card 2-->
+                <div
+                    class="p-5 swiper-slide card flex flex-col mt-6 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl w-96 text-center">
+                    <h5
+                        class="block mb-2 font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+                        Convênio B
+                    </h5>
+                </div>
 
-                        <div
-                            class="flex-none md:w-1/3 sm:w-72 mr-8 md:pb-4 border rounded-lg max-w-sm overflow-hidden shadow-lg">
-                            <img class="w-full" src="../img/img-4.jpg" alt="Exame">
-                            <div class="px-6 py-4">
-                                <div class="font-bold text-xl mb-2">Exame D</div>
-                                <p class="text-gray-700 text-base">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia,
-                                    nulla! Maiores et perferendis
-                                    eaque, exercitationem praesentium nihil.
-                                </p>
-                            </div>
-                        </div>
+                <!-- Card 3-->
+                <div
+                    class="p-5 swiper-slide card flex flex-col mt-6 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl w-96 ">
+                    <h5
+                        class="block mb-2 font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900 text-center">
+                        Convênio C
+                    </h5>
+                </div>
 
-                        <div
-                            class="flex-none md:w-1/3 sm:w-72 mr-8 md:pb-4 border rounded-lg max-w-sm overflow-hidden shadow-lg">
-                            <img class="w-full" src="../img/img-4.jpg" alt="Exame">
-                            <div class="px-6 py-4">
-                                <div class="font-bold text-xl mb-2">Exame E</div>
-                                <p class="text-gray-700 text-base">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia,
-                                    nulla! Maiores et perferendis
-                                    eaque, exercitationem praesentium nihil.
-                                </p>
-                            </div>
-                        </div>
+                <!-- Card 4-->
+                <div
+                    class="p-5 swiper-slide card flex flex-col mt-6 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl w-96 text-center">
+                    <h5
+                        class="block mb-2 font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+                        Convênio D
+                    </h5>
+                </div>
 
-                        <div
-                            class="flex-none md:w-1/3 sm:w-72 mr-8 md:pb-4 border rounded-lg max-w-sm overflow-hidden shadow-lg">
-                            <img class="w-full" src="../img/img-4.jpg" alt="Exame">
-                            <div class="px-6 py-4">
-                                <div class="font-bold text-xl mb-2">Exame F</div>
-                                <p class="text-gray-700 text-base">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia,
-                                    nulla! Maiores et perferendis
-                                    eaque, exercitationem praesentium nihil.
-                                </p>
-                            </div>
-                        </div>
+                <!-- Card 5-->
+                <div
+                    class="p-5 swiper-slide card flex flex-col mt-6 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl w-96 ">
+                    <h5
+                        class="block mb-2 font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900 text-center">
+                        Convênio E
+                    </h5>
+                </div>
 
-                        <div
-                            class="flex-none md:w-1/3 sm:w-72 mr-8 md:pb-4 border rounded-lg max-w-sm overflow-hidden shadow-lg">
-                            <img class="w-full" src="../img/img-4.jpg" alt="Exame">
-                            <div class="px-6 py-4">
-                                <div class="font-bold text-xl mb-2">Exame G</div>
-                                <p class="text-gray-700 text-base">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia,
-                                    nulla! Maiores et perferendis
-                                    eaque, exercitationem praesentium nihil.
-                                </p>
-                            </div>
+                <!-- Card 6-->
+                <div
+                    class="p-5 swiper-slide card flex flex-col mt-6 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl w-96 text-center">
+                    <h5
+                        class="block mb-2 font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+                        Convênio F
+                    </h5>
+                </div>
+
+            </div>
+
+            <!-- Gradiente à esquerda -->
+            <div class="absolute rounded-md inset-y-0 left-0 w-36 bg-gradient-to-r from-slate-200 to-transparent z-10">
+            </div>
+
+            <!-- Gradiente à direita -->
+            <div class="absolute rounded-md inset-y-0 right-0 w-36 bg-gradient-to-l from-slate-200 to-transparent z-10">
+            </div>
+
+        </div>
+
+        <div class="flex flex-col items-center mt-4">
+            <a href="">
+                <button
+                    class="relative flex h-[50px] text-Laranja-3 w-56 items-center justify-center rounded-lg overflow-hidden bg-white border-2 shadow-lg transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-gradient-to-r to-Laranja-2 from-Laranja-4 before:duration-500 before:ease-out hover:text-white hover:before:h-56 hover:before:w-56">
+                    <span class="relative z-10 font-semibold">Ver todos os Convênios</span>
+                </button>
+            </a>
+        </div>
+
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var mySwiper = new Swiper('.swiper-container', {
+                    slidesPerView: 5,
+                    spaceBetween: 15,
+                    loop: true,
+                    autoplay: {
+                        delay: 2000,
+                    },
+                });
+            });
+        </script>
+
+
+    </section>
+
+    <!-- Seção "Unidades" -->
+    <section class="w-full h-auto flex flex-col items-center pb-16 mb-10 ">
+
+        <!-- Galeria de Cards-->
+
+        <div class="container bg-white mt-6 rounded-lg shadow-lg pb-8 border-2 border-gray-100">
+
+            <!-- Título -->
+            <div class="flex flex-col items-center">
+                <h1
+                    class="p-6 text-center text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r to-Laranja-2 from-Laranja-4">
+                    Nossas Unidades
+                </h1>
+
+                <div
+                    class="mb-4 bg-gradient-to-r to-Laranja-2 from-Laranja-4 w-80 p-0.5 border-b-2 shadow-xl rounded-xl">
+                </div>
+            </div>
+
+            <div class="container mx-auto py-8">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Card Unidade 1 -->
+                    <div
+                        class="bg-white shadow-lg rounded-lg overflow-hidden bg-gradient-to-r from-Laranja-4 to-Laranja-2">
+                        <div class=" p-4">
+                            <h3 class="text-lg font-bold text-white mb-4">Unidade X</h3>
+                            <img src="../img/logo-maps.png" alt="Imagem Unidade 3" class="w-full h-auto rounded-lg">
+                        </div>
+                        <div class="p-4">
+                            <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                                vestibulum libero
+                                vel libero tristique, vitae convallis metus vestibulum.</p>
+                            <a href="#" class="block mt-4 text-white font-semibold">Saiba
+                                mais</a>
+                        </div>
+                    </div>
+
+                    <!-- Card Unidade 2 -->
+                    <div
+                        class="bg-white shadow-lg rounded-lg overflow-hidden bg-gradient-to-r from-Laranja-4 to-Laranja-2">
+                        <div class=" p-4">
+                            <h3 class="text-lg font-bold text-white mb-4">Unidade Y</h3>
+                            <img src="../img/logo-maps.png" alt="Imagem Unidade 3" class="w-full h-auto rounded-lg">
+                        </div>
+                        <div class="p-4">
+                            <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                                vestibulum libero
+                                vel libero tristique, vitae convallis metus vestibulum.</p>
+                            <a href="#" class="block mt-4 text-white font-semibold">Saiba
+                                mais</a>
+                        </div>
+                    </div>
+
+                    <!-- Card Unidade 3 -->
+                    <div
+                        class="bg-white shadow-lg rounded-lg overflow-hidden bg-gradient-to-r from-Laranja-4 to-Laranja-2">
+                        <div class=" p-4">
+                            <h3 class="text-lg font-bold text-white mb-4">Unidade Z</h3>
+                            <img src="../img/logo-maps.png" alt="Imagem Unidade 3" class="w-full h-auto rounded-lg">
+                        </div>
+                        <div class="p-4">
+                            <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                                vestibulum libero
+                                vel libero tristique, vitae convallis metus vestibulum.</p>
+                            <a href="#" class="block mt-4 text-white font-semibold">Saiba
+                                mais</a>
                         </div>
                     </div>
                 </div>
+            </div>
+
+
+            <div class="flex flex-col items-center mt-4">
+                <a href="">
+                    <button
+                        class="relative flex h-[50px] text-Laranja-3 w-56 items-center justify-center rounded-lg overflow-hidden bg-white border-2 shadow-lg transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-gradient-to-r to-Laranja-2 from-Laranja-4 before:duration-500 before:ease-out hover:text-white hover:before:h-56 hover:before:w-56">
+                        <span class="relative z-10 font-semibold">Ver unidades no mapa</span>
+                    </button>
+                </a>
             </div>
         </div>
     </section>
@@ -612,89 +884,95 @@
 
                 <!-- Instagram -->
                 <button class="relative group flex justify-center items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0,0,256,256"
-                        class="mb-2">
-                        <g transform="translate(51.2,51.2) scale(0.6,0.6)">
-                            <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
-                                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
-                                font-family="none" font-weight="none" font-size="none" text-anchor="none"
-                                style="mix-blend-mode: normal">
-                                <path
-                                    d="M128,341.33333c-117.82075,0 -213.33333,-95.51259 -213.33333,-213.33333v0c0,-117.82075 95.51259,-213.33333 213.33333,-213.33333h0c117.82075,0 213.33333,95.51259 213.33333,213.33333v0c0,117.82075 -95.51259,213.33333 -213.33333,213.33333z"
-                                    id="shape"></path>
-                            </g>
-                            <g fill="#fe5f2f" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
-                                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
-                                font-family="none" font-weight="none" font-size="none" text-anchor="none"
-                                style="mix-blend-mode: normal">
-                                <g transform="scale(10.66667,10.66667)">
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40"
+                            viewBox="0,0,256,256" class="mb-2">
+                            <g transform="translate(51.2,51.2) scale(0.6,0.6)">
+                                <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1"
+                                    stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
+                                    stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
+                                    font-size="none" text-anchor="none" style="mix-blend-mode: normal">
                                     <path
-                                        d="M8,3c-2.761,0 -5,2.239 -5,5v8c0,2.761 2.239,5 5,5h8c2.761,0 5,-2.239 5,-5v-8c0,-2.761 -2.239,-5 -5,-5zM18,5c0.552,0 1,0.448 1,1c0,0.552 -0.448,1 -1,1c-0.552,0 -1,-0.448 -1,-1c0,-0.552 0.448,-1 1,-1zM12,7c2.761,0 5,2.239 5,5c0,2.761 -2.239,5 -5,5c-2.761,0 -5,-2.239 -5,-5c0,-2.761 2.239,-5 5,-5zM12,9c-1.65685,0 -3,1.34315 -3,3c0,1.65685 1.34315,3 3,3c1.65685,0 3,-1.34315 3,-3c0,-1.65685 -1.34315,-3 -3,-3z">
-                                    </path>
+                                        d="M128,341.33333c-117.82075,0 -213.33333,-95.51259 -213.33333,-213.33333v0c0,-117.82075 95.51259,-213.33333 213.33333,-213.33333h0c117.82075,0 213.33333,95.51259 213.33333,213.33333v0c0,117.82075 -95.51259,213.33333 -213.33333,213.33333z"
+                                        id="shape"></path>
+                                </g>
+                                <g fill="#fe5f2f" fill-rule="nonzero" stroke="none" stroke-width="1"
+                                    stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
+                                    stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
+                                    font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                                    <g transform="scale(10.66667,10.66667)">
+                                        <path
+                                            d="M8,3c-2.761,0 -5,2.239 -5,5v8c0,2.761 2.239,5 5,5h8c2.761,0 5,-2.239 5,-5v-8c0,-2.761 -2.239,-5 -5,-5zM18,5c0.552,0 1,0.448 1,1c0,0.552 -0.448,1 -1,1c-0.552,0 -1,-0.448 -1,-1c0,-0.552 0.448,-1 1,-1zM12,7c2.761,0 5,2.239 5,5c0,2.761 -2.239,5 -5,5c-2.761,0 -5,-2.239 -5,-5c0,-2.761 2.239,-5 5,-5zM12,9c-1.65685,0 -3,1.34315 -3,3c0,1.65685 1.34315,3 3,3c1.65685,0 3,-1.34315 3,-3c0,-1.65685 -1.34315,-3 -3,-3z">
+                                        </path>
+                                    </g>
                                 </g>
                             </g>
-                        </g>
-                    </svg>
-                    <span
-                        class="ease absolute bottom-0 right-1/2 transform translate-x-1/2 h-0 w-0 border-b-2 border-white transition-all duration-200 group-hover:w-full"></span>
+                        </svg>
+                        <span
+                            class="ease absolute bottom-0 right-1/2 transform translate-x-1/2 h-0 w-0 border-b-2 border-white transition-all duration-200 group-hover:w-full"></span>
+                    </a>
                 </button>
 
                 <!-- Whatsapp -->
                 <button class="relative group flex justify-center items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0,0,256,256"
-                        class="mb-2">
-                        <g transform="translate(51.2,51.2) scale(0.6,0.6)">
-                            <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
-                                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
-                                font-family="none" font-weight="none" font-size="none" text-anchor="none"
-                                style="mix-blend-mode: normal">
-                                <path
-                                    d="M128,341.33333c-117.82075,0 -213.33333,-95.51259 -213.33333,-213.33333v0c0,-117.82075 95.51259,-213.33333 213.33333,-213.33333h0c117.82075,0 213.33333,95.51259 213.33333,213.33333v0c0,117.82075 -95.51259,213.33333 -213.33333,213.33333z"
-                                    id="shape"></path>
-                            </g>
-                            <g fill="#fe5f2f" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
-                                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
-                                font-family="none" font-weight="none" font-size="none" text-anchor="none"
-                                style="mix-blend-mode: normal">
-                                <g transform="scale(8.53333,8.53333)">
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40"
+                            viewBox="0,0,256,256" class="mb-2">
+                            <g transform="translate(51.2,51.2) scale(0.6,0.6)">
+                                <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1"
+                                    stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
+                                    stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
+                                    font-size="none" text-anchor="none" style="mix-blend-mode: normal">
                                     <path
-                                        d="M15,3c-6.627,0 -12,5.373 -12,12c0,2.25121 0.63234,4.35007 1.71094,6.15039l-1.60352,5.84961l5.97461,-1.56836c1.74732,0.99342 3.76446,1.56836 5.91797,1.56836c6.627,0 12,-5.373 12,-12c0,-6.627 -5.373,-12 -12,-12zM10.89258,9.40234c0.195,0 0.39536,-0.00119 0.56836,0.00781c0.214,0.005 0.44692,0.02067 0.66992,0.51367c0.265,0.586 0.84202,2.05608 0.91602,2.20508c0.074,0.149 0.12644,0.32453 0.02344,0.51953c-0.098,0.2 -0.14897,0.32105 -0.29297,0.49805c-0.149,0.172 -0.31227,0.38563 -0.44727,0.51563c-0.149,0.149 -0.30286,0.31238 -0.13086,0.60938c0.172,0.297 0.76934,1.27064 1.65234,2.05664c1.135,1.014 2.09263,1.32561 2.39063,1.47461c0.298,0.149 0.47058,0.12578 0.64258,-0.07422c0.177,-0.195 0.74336,-0.86411 0.94336,-1.16211c0.195,-0.298 0.39406,-0.24644 0.66406,-0.14844c0.274,0.098 1.7352,0.8178 2.0332,0.9668c0.298,0.149 0.49336,0.22275 0.56836,0.34375c0.077,0.125 0.07708,0.72006 -0.16992,1.41406c-0.247,0.693 -1.45991,1.36316 -2.00391,1.41016c-0.549,0.051 -1.06136,0.24677 -3.56836,-0.74023c-3.024,-1.191 -4.93108,-4.28828 -5.08008,-4.48828c-0.149,-0.195 -1.21094,-1.61031 -1.21094,-3.07031c0,-1.465 0.76811,-2.18247 1.03711,-2.48047c0.274,-0.298 0.59492,-0.37109 0.79492,-0.37109z">
-                                    </path>
+                                        d="M128,341.33333c-117.82075,0 -213.33333,-95.51259 -213.33333,-213.33333v0c0,-117.82075 95.51259,-213.33333 213.33333,-213.33333h0c117.82075,0 213.33333,95.51259 213.33333,213.33333v0c0,117.82075 -95.51259,213.33333 -213.33333,213.33333z"
+                                        id="shape"></path>
+                                </g>
+                                <g fill="#fe5f2f" fill-rule="nonzero" stroke="none" stroke-width="1"
+                                    stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
+                                    stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
+                                    font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                                    <g transform="scale(8.53333,8.53333)">
+                                        <path
+                                            d="M15,3c-6.627,0 -12,5.373 -12,12c0,2.25121 0.63234,4.35007 1.71094,6.15039l-1.60352,5.84961l5.97461,-1.56836c1.74732,0.99342 3.76446,1.56836 5.91797,1.56836c6.627,0 12,-5.373 12,-12c0,-6.627 -5.373,-12 -12,-12zM10.89258,9.40234c0.195,0 0.39536,-0.00119 0.56836,0.00781c0.214,0.005 0.44692,0.02067 0.66992,0.51367c0.265,0.586 0.84202,2.05608 0.91602,2.20508c0.074,0.149 0.12644,0.32453 0.02344,0.51953c-0.098,0.2 -0.14897,0.32105 -0.29297,0.49805c-0.149,0.172 -0.31227,0.38563 -0.44727,0.51563c-0.149,0.149 -0.30286,0.31238 -0.13086,0.60938c0.172,0.297 0.76934,1.27064 1.65234,2.05664c1.135,1.014 2.09263,1.32561 2.39063,1.47461c0.298,0.149 0.47058,0.12578 0.64258,-0.07422c0.177,-0.195 0.74336,-0.86411 0.94336,-1.16211c0.195,-0.298 0.39406,-0.24644 0.66406,-0.14844c0.274,0.098 1.7352,0.8178 2.0332,0.9668c0.298,0.149 0.49336,0.22275 0.56836,0.34375c0.077,0.125 0.07708,0.72006 -0.16992,1.41406c-0.247,0.693 -1.45991,1.36316 -2.00391,1.41016c-0.549,0.051 -1.06136,0.24677 -3.56836,-0.74023c-3.024,-1.191 -4.93108,-4.28828 -5.08008,-4.48828c-0.149,-0.195 -1.21094,-1.61031 -1.21094,-3.07031c0,-1.465 0.76811,-2.18247 1.03711,-2.48047c0.274,-0.298 0.59492,-0.37109 0.79492,-0.37109z">
+                                        </path>
+                                    </g>
                                 </g>
                             </g>
-                        </g>
-                    </svg>
-                    <span
-                        class="ease absolute bottom-0 right-1/2 transform translate-x-1/2 h-0 w-0 border-b-2 border-white transition-all duration-200 group-hover:w-full"></span>
+                        </svg>
+                        <span
+                            class="ease absolute bottom-0 right-1/2 transform translate-x-1/2 h-0 w-0 border-b-2 border-white transition-all duration-200 group-hover:w-full"></span>
+                    </a>
                 </button>
 
                 <!-- Facebook -->
                 <button class="relative group flex justify-center items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0,0,256,256"
-                        class="mb-2">
-                        <g transform="translate(51.2,51.2) scale(0.6,0.6)">
-                            <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
-                                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
-                                font-family="none" font-weight="none" font-size="none" text-anchor="none"
-                                style="mix-blend-mode: normal">
-                                <path
-                                    d="M128,341.33333c-117.82075,0 -213.33333,-95.51259 -213.33333,-213.33333v0c0,-117.82075 95.51259,-213.33333 213.33333,-213.33333h0c117.82075,0 213.33333,95.51259 213.33333,213.33333v0c0,117.82075 -95.51259,213.33333 -213.33333,213.33333z"
-                                    id="shape"></path>
-                            </g>
-                            <g fill="#fe5f2f" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
-                                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
-                                font-family="none" font-weight="none" font-size="none" text-anchor="none"
-                                style="mix-blend-mode: normal">
-                                <g transform="scale(10.66667,10.66667)">
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40"
+                            viewBox="0,0,256,256" class="mb-2">
+                            <g transform="translate(51.2,51.2) scale(0.6,0.6)">
+                                <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1"
+                                    stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
+                                    stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
+                                    font-size="none" text-anchor="none" style="mix-blend-mode: normal">
                                     <path
-                                        d="M12,2c-5.523,0 -10,4.477 -10,10c0,5.013 3.693,9.153 8.505,9.876v-7.226h-2.474v-2.629h2.474v-1.749c0,-2.896 1.411,-4.167 3.818,-4.167c1.153,0 1.762,0.085 2.051,0.124v2.294h-1.642c-1.022,0 -1.379,0.969 -1.379,2.061v1.437h2.995l-0.406,2.629h-2.588v7.247c4.881,-0.661 8.646,-4.835 8.646,-9.897c0,-5.523 -4.477,-10 -10,-10z">
-                                    </path>
+                                        d="M128,341.33333c-117.82075,0 -213.33333,-95.51259 -213.33333,-213.33333v0c0,-117.82075 95.51259,-213.33333 213.33333,-213.33333h0c117.82075,0 213.33333,95.51259 213.33333,213.33333v0c0,117.82075 -95.51259,213.33333 -213.33333,213.33333z"
+                                        id="shape"></path>
+                                </g>
+                                <g fill="#fe5f2f" fill-rule="nonzero" stroke="none" stroke-width="1"
+                                    stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
+                                    stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
+                                    font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                                    <g transform="scale(10.66667,10.66667)">
+                                        <path
+                                            d="M12,2c-5.523,0 -10,4.477 -10,10c0,5.013 3.693,9.153 8.505,9.876v-7.226h-2.474v-2.629h2.474v-1.749c0,-2.896 1.411,-4.167 3.818,-4.167c1.153,0 1.762,0.085 2.051,0.124v2.294h-1.642c-1.022,0 -1.379,0.969 -1.379,2.061v1.437h2.995l-0.406,2.629h-2.588v7.247c4.881,-0.661 8.646,-4.835 8.646,-9.897c0,-5.523 -4.477,-10 -10,-10z">
+                                        </path>
+                                    </g>
                                 </g>
                             </g>
-                        </g>
-                    </svg>
-                    <span
-                        class="ease absolute bottom-0 right-1/2 transform translate-x-1/2 h-0 w-0 border-b-2 border-white transition-all duration-200 group-hover:w-full"></span>
+                        </svg>
+                        <span
+                            class="ease absolute bottom-0 right-1/2 transform translate-x-1/2 h-0 w-0 border-b-2 border-white transition-all duration-200 group-hover:w-full"></span>
+                    </a>
                 </button>
 
 
@@ -710,9 +988,7 @@
         </div>
     </footer>
 
-
-
-
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
 </body>
 
