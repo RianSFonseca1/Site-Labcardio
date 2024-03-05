@@ -251,98 +251,6 @@
         <!-- Adicione esta seção à sua página HTML -->
         <div id="accordion-container"></div>
 
-        <script>
-            document.addEventListener("DOMContentLoaded", function () {
-                const accordionContainer = document.getElementById("accordion-container");
-
-                // Criar 26 acordeões pais
-                for (let i = 1; i <= 26; i++) {
-                    const parentId = `accordion-parent-${String.fromCharCode(64 + i)}`;
-                    const parentTitleId = `accordion-parent-heading-${String.fromCharCode(64 + i)}`;
-                    const parentBodyId = `accordion-parent-body-${String.fromCharCode(64 + i)}`;
-
-                    const parentAccordion = document.createElement("div");
-                    parentAccordion.id = parentId;
-                    parentAccordion.className = "border-2 border-gray-200 p-5 bg-gray-50 rounded-lg";
-                    parentAccordion.setAttribute("data-accordion", "collapse");
-
-                    const parentTitle = document.createElement("h2");
-                    parentTitle.id = parentTitleId;
-                    parentTitle.innerHTML = `
-                        <button type="button" class="flex bg-white items-center justify-between w-full p-5 mb-2 font-medium rtl:text-right text-gray-500 border border-gray-200 rounded-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3" data-accordion-target="#${parentBodyId}" aria-expanded="false" aria-controls="${parentBodyId}">
-                            <span class= "text-Laranja-3 font-bold">Exame ${String.fromCharCode(64 + i)}</span>
-                            <svg data-accordion-icon class="w-3 h-3 shrink-0 rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5" />
-                            </svg>
-                        </button>
-                        `;
-
-
-                    const parentBody = document.createElement("div");
-                    parentBody.id = parentBodyId;
-                    parentBody.className = "hidden";
-                    parentBody.setAttribute("aria-labelledby", parentTitleId);
-
-                    // Criar 3 filhos para cada acordeão pai
-                    for (let j = 1; j <= 3; j++) {
-                        const childId = `accordion-child-${String.fromCharCode(64 + i)}-${j}`;
-                        const childTitleId = `accordion-child-heading-${String.fromCharCode(64 + i)}-${j}`;
-                        const childBodyId = `accordion-child-body-${String.fromCharCode(64 + i)}-${j}`;
-
-                        const childAccordion = document.createElement("div");
-                        childAccordion.id = childId;
-                        childAccordion.setAttribute("data-accordion", "collapse");
-
-                        const childTitle = document.createElement("h2");
-                        childTitle.id = childTitleId;
-                        childTitle.innerHTML = `
-        <button type="button" class="flex bg-white items-center justify-between w-full p-5 mb-1 rounded-lg font-medium rtl:text-right text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3" data-accordion-target="#${childBodyId}" aria-expanded="false" aria-controls="${childBodyId}">
-          <span class= "text-Laranja-3">Child ${String.fromCharCode(64 + i)}-${j}</span>
-          <svg data-accordion-icon class="w-3 h-3 shrink-0 rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5" />
-          </svg>
-        </button>
-      `;
-
-                        const childBody = document.createElement("div");
-                        childBody.id = childBodyId;
-                        childBody.className = "hidden";
-                        childBody.setAttribute("aria-labelledby", childTitleId);
-
-                        // Conteúdo dos filhos
-                        const childContent = document.createElement("p");
-                        childContent.className = "p-5 text-gray-500 dark:text-gray-400";
-                        childContent.textContent = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`;
-
-                        childBody.appendChild(childContent);
-
-                        childAccordion.appendChild(childTitle);
-                        childAccordion.appendChild(childBody);
-
-                        parentBody.appendChild(childAccordion);
-                    }
-
-                    parentAccordion.appendChild(parentTitle);
-                    parentAccordion.appendChild(parentBody);
-
-                    accordionContainer.appendChild(parentAccordion);
-
-                    // Adicionar evento de clique para alternar a orientação da seta
-                    parentTitle.addEventListener("click", function () {
-                        const icon = parentTitle.querySelector('svg[data-accordion-icon]');
-                        const isExpanded = parentTitle.getAttribute('aria-expanded') === 'true';
-
-                        // Alternar a classe rotate-180 com base no estado de expansão
-                        if (isExpanded) {
-                            icon.classList.remove('rotate-180');
-                        } else {
-                            icon.classList.add('rotate-180');
-                        }
-                    });
-                }
-            });
-
-        </script>
 
 
 
@@ -510,8 +418,7 @@
         </div>
     </footer>
 
-
-
+    <script src="./Js/main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
 </body>
 
