@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+
+const defaultTheme = require('tailwindcss/defaultTheme');
 module.exports = {
   content: ["./src/**/*.{html,js}", "./node_modules/flowbite/**/*.js"],
   theme: {
@@ -19,6 +21,9 @@ module.exports = {
       // => @media (min-width: 1536px) { ... }
     },
     extend: {
+      fontFamily: {
+        madimi: ['"Madimi One"', ...defaultTheme.fontFamily.sans]
+      },
       scale: {
         '0': '0',
         '25': '.25',
@@ -44,6 +49,7 @@ module.exports = {
         '1000': '10',
       },
       colors: {
+        'Cinza-1': '#8f8c8a',
         'Laranja-1': '#ffcc33',
         'Laranja-2': '#ffa832',
         'Laranja-3': '#fe8330',
