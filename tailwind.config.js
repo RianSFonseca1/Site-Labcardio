@@ -2,7 +2,7 @@
 
 const defaultTheme = require('tailwindcss/defaultTheme');
 module.exports = {
-  content: ["./src/**/*.{html,js}", "./node_modules/flowbite/**/*.js"],
+  content: ["./src/**/*.{html,js}", "./node_modules/flowbite/**/*.js", "./node_modules/tw-elements/js/**/*.js"],
   theme: {
     screens: {
       'sm': '320px',
@@ -86,6 +86,7 @@ module.exports = {
   plugins: [
     require('flowbite/plugin'),
     require('tailgrids/plugin'),
+    require("tw-elements/plugin.cjs"),
   ],
 }
 
