@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="h-screen">
+<html class="">
 
 <head>
     <meta charset="UTF-8">
@@ -13,330 +13,342 @@
 
 </head>
 
-<body class="h-screen">
+<body class="">
 
-    <header class="sticky z-20 top-0 flex-none w-full mx-auto bg-white border-b border-gray-200 dark:border-gray-600 dark:bg-gray-800">
+    <div class="overflow-hidden">
 
-        <nav class="bg-white border-gray-200">
-            <div class="p-5 max-w-screen-xl flex flex-wrap items-center justify-between mx-auto">
-                <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
-                    <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" />
-                    <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
-                </a>
-                <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
-                    <span class="sr-only">Open main menu</span>
-                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-                    </svg>
-                </button>
-                <div class="hidden w-auto lg:block md:w-auto" id="navbar-default">
-                    <ul class="flex p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-                            <li class="flex items-center relative group text-gray-700 lg:scale-75 xl:scale-100">
-                                <a href=""
-                                    class="w-auto flex items-center justify-center space-x-2 flex-row transform transition-all duration-100 group-hover:text-Laranja-4 group-hover:scale-110">
+        <header class="sticky z-20 top-0 flex-none w-full mx-auto border-t-2 border-Laranja-4 justify-center items-center bg-white shadow-lg">
+    
+            <nav class="bg-white border-gray-200">
+                <div class="p-1 max-w-screen-xl flex flex-wrap items-center justify-between mx-auto">
 
-                                    <span
-                                        class="ease transform transition-all duration-200 text-base font-semibold scale-y-125">Institucional</span>
-                                    <span
-                                        class="ease absolute ml-4 -bottom-4 right-1/2 transform translate-x-1/2 h-0 w-0 border-b-2 border-orange-500 transition-all duration-300 group-hover:w-full"></span>
-                                </a>
-                            </li>
-                            <li class="flex items-center relative group text-gray-700 lg:scale-75 xl:scale-100">
-                                <a href=""
-                                    class="w-auto flex items-center justify-center space-x-2 flex-row transform transition-all duration-100 group-hover:text-Laranja-4 group-hover:scale-110">
+                    <div class="w-full flex justify-center lg:w-auto">
+                        <a href="https://flowbite.com/" class="flex items-center mb-4 lg:mb-0">
+                            <img src="../site-labcardio-vue/src/img/png-lab.png" class="h-20 pb-2 pl-0 sm:pl-10" alt="ícone-lab">
+                            <div class="flex flex-col">
+                                <span class=" text-4xl lg:text-4xl font-extrabold text-Cinza-1 font-madimi scale-y-125">LAB<span
+                                    class="text-transparent bg-clip-text bg-gradient-to-r to-Laranja-4 from-Laranja-2 scale-y-125">CARDIO</span></span>
+                                <p class="text-xs font-semibold text-Cinza-1 flex flex-nowrap w-64">
+                                    Laboratório de
+                                    análises clínicas</p>
+                                
+                            </div>
+                        </a>
+                        <button class="navbar-burger absolute flex -bottom-5 items-center text-Laranja-4 p-3 bg-white rounded-full shadow-lg border-2 border-gray-100 lg:hidden">
+                            <svg class="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <title>Mobile menu</title>
+                                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                            </svg>
+                        </button>
+                    </div>
 
-                                    <span
-                                        class="ease transform transition-all duration-200 text-base font-semibold scale-y-125">Exames</span>
-                                    <span
-                                        class="ease absolute ml-4 -bottom-4 right-1/2 transform translate-x-1/2 h-0 w-0 border-b-2 border-orange-500 transition-all duration-300 group-hover:w-full"></span>
-                                </a>
-                            </li>
-                            <li class="flex items-center relative group text-gray-700 lg:scale-75 xl:scale-100">
-                                <a href=""
-                                    class="w-auto flex items-center justify-center space-x-2 flex-row transform transition-all duration-100 group-hover:text-Laranja-4 group-hover:scale-110">
-
-                                    <span
-                                        class="ease transform transition-all duration-200 text-base font-semibold scale-y-125">Convênios</span>
-                                    <span
-                                        class="ease absolute ml-4 -bottom-4 right-1/2 transform translate-x-1/2 h-0 w-0 border-b-2 border-orange-500 transition-all duration-300 group-hover:w-full"></span>
-                                </a>
-                            </li>
-                            <li class="flex items-center relative group text-gray-700 lg:scale-75 xl:scale-100">
-                                <a href=""
-                                    class="w-auto flex items-center justify-center space-x-2 flex-row transform transition-all duration-100 group-hover:text-Laranja-4 group-hover:scale-110">
-
-                                    <span
-                                        class="ease transform transition-all duration-200 text-base font-semibold scale-y-125">Unidades</span>
-                                    <span
-                                        class="ease absolute ml-4 -bottom-4 right-1/2 transform translate-x-1/2 h-0 w-0 border-b-2 border-orange-500 transition-all duration-300 group-hover:w-full"></span>
-                                </a>
-                            </li>
-                            <li class="flex items-center flex-row space-x-2 relative border-l pl-4 border-gray-300 group text-gray-700 lg:scale-75 xl:scale-100">
+                    <div class="hidden w-auto lg:block" id="navbar-default">
+                        <div class="flex flex-row lg:-space-x-6 xl:space-x-4">
+                            <ul class="w-auto flex pr-6 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 lg:-space-x-1 xl:space-x-6 md:mt-0 md:border-0 md:bg-white">
+                                    <li class="flex items-center relative group text-gray-700 lg:scale-75 xl:scale-100">
+                                        <a href=""
+                                            class="w-auto flex items-center justify-center space-x-2 flex-row transform transition-all duration-100 group-hover:text-Laranja-4 group-hover:scale-110">
+        
+                                            <span
+                                                class="ease transform transition-all duration-200 text-base font-semibold scale-y-125">Institucional</span>
+                                            <span
+                                                class="ease absolute ml-4 -bottom-4 right-1/2 transform translate-x-1/2 h-0 w-0 border-b-2 border-orange-500 transition-all duration-300 group-hover:w-full"></span>
+                                        </a>
+                                    </li>
+                                    <li class="flex items-center relative group text-gray-700 lg:scale-75 xl:scale-100">
+                                        <a href=""
+                                            class="w-auto flex items-center justify-center space-x-2 flex-row transform transition-all duration-100 group-hover:text-Laranja-4 group-hover:scale-110">
+        
+                                            <span
+                                                class="ease transform transition-all duration-200 text-base font-semibold scale-y-125">Exames</span>
+                                            <span
+                                                class="ease absolute ml-4 -bottom-4 right-1/2 transform translate-x-1/2 h-0 w-0 border-b-2 border-orange-500 transition-all duration-300 group-hover:w-full"></span>
+                                        </a>
+                                    </li>
+                                    <li class="flex items-center relative group text-gray-700 lg:scale-75 xl:scale-100">
+                                        <a href=""
+                                            class="w-auto flex items-center justify-center space-x-2 flex-row transform transition-all duration-100 group-hover:text-Laranja-4 group-hover:scale-110">
+        
+                                            <span
+                                                class="ease transform transition-all duration-200 text-base font-semibold scale-y-125">Convênios</span>
+                                            <span
+                                                class="ease absolute ml-4 -bottom-4 right-1/2 transform translate-x-1/2 h-0 w-0 border-b-2 border-orange-500 transition-all duration-300 group-hover:w-full"></span>
+                                        </a>
+                                    </li>
+                                    <li class="flex items-center relative group text-gray-700 lg:scale-75 xl:scale-100">
+                                        <a href=""
+                                            class="w-auto flex items-center justify-center space-x-2 flex-row transform transition-all duration-100 group-hover:text-Laranja-4 group-hover:scale-110">
+        
+                                            <span
+                                                class="ease transform transition-all duration-200 text-base font-semibold scale-y-125">Unidades</span>
+                                            <span
+                                                class="ease absolute ml-4 -bottom-4 right-1/2 transform translate-x-1/2 h-0 w-0 border-b-2 border-orange-500 transition-all duration-300 group-hover:w-full"></span>
+                                        </a>
+                                    </li>
+                            </ul>
+                            <div class="w-auto flex items-center justify-end flex-row space-x-3 relative border-l pl-4 border-gray-300 group text-gray-700 lg:scale-75 xl:scale-100">
                                 <button
-                                    class="p-1 relative flex h-10 w-auto flex-nowrap space-x-2 items-center justify-center border border-orange-500 rounded-md overflow-hidden bg-white text-orange-500 transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-orange-500 before:duration-500 before:ease-out hover:text-white hover:border-orange-500 hover:before:h-56 hover:before:w-56">
-                                    <svg class="relative w-auto h-6" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                                    </svg>
-                                    <span class="relative z-10 font-semibold ">Contate-nos</span>
+                                        class="p-1 relative flex h-10 w-auto flex-nowrap space-x-2 items-center justify-center border border-orange-500 rounded-md overflow-hidden bg-white text-orange-400 transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-orange-400 before:duration-500 before:ease-out hover:text-white hover:border-orange-400 hover:before:h-56 hover:before:w-56">
+                                        <svg class="relative w-auto h-6" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                        </svg>
+                                        <span class="relative z-10 font-semibold ">Contate-nos</span>
                                 </button>
-                                <button
-                                    class="p-1 relative flex h-10 w-auto flex-nowrap space-x-2 items-center justify-center border border-green rounded-md overflow-hidden bg-white text-green transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-green before:duration-500 before:ease-out hover:text-white hover:border-green hover:before:h-56 hover:before:w-56">
-                                    <svg class="relative w-auto h-6" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                                    </svg>
+                                    <button
+                                        class="p-1 px-2 relative flex h-10 w-auto space-x-2 items-center justify-center rounded-md overflow-hidden bg-green text-white transition-all duration-200 hover:scale-110">
+                                       <svg class="relative w-auto h-6" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+                                        </svg>
                                     <span class="relative z-10 font-semibold ">Resultados</span>
                                 </button>
-                            </li>
-
-
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
-    </header>
-
-    <!-- [Ativado na responsividade] Div "Hamburguer menu" oculto -->
-    <div class="navbar-menu relative z-50 hidden">
-        <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
-        <nav
-            class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
-            <div class="w-full flex flex-col mb-6 border-b border-gray-200">
-
-                <button class="flex justify-end w-full navbar-close">
-                    <svg class="h-6 w-6 text-gray-400 cursor-pointer bg-gray-200 rounded-md"
-                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
-                        </path>
-                    </svg>
-                </button>
-
-                <a href="" class="flex justify-start -ml-2 mb-4 w-full lg:mb-0">
-                    <div class="flex flex-row items-center lg:-space-x-2 xl:space-x-0">
-                        <img src="../site-labcardio-vue/src/img/png-lab.png" class="h-20 pb-2" alt="ícone-lab">
-                        <div class="flex flex-col lg:scale-90 xl:scale-100">
-                            <span
-                                class=" text-4xl lg:text-4xl font-extrabold text-Cinza-1 font-madimi scale-y-125">LAB<span
-                                    class="text-transparent bg-clip-text bg-gradient-to-r to-Laranja-4 from-Laranja-2 scale-y-125">CARDIO</span></span>
-                            <p class="text-xs font-semibold text-Cinza-1 flex flex-nowrap">
-                                Laboratório de
-                                análises clínicas</p>
+                            </div>
                         </div>
                     </div>
-                </a>
-            </div>
-
-            <div>
-                <ul class="border-l-4 border-Laranja-3 rounded-sm">
-                    <li class="mb-1">
-                        <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-gray-100 hover:text-orange-500 rounded"
-                            href="#">Página Inicial</a>
-                    </li>
-                    <li class="mb-1">
-                        <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-gray-100 hover:text-orange-500 rounded"
-                            href="#">Institucional</a>
-                    </li>
-                    <li class="mb-1">
-                        <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-gray-100 hover:text-orange-500 rounded"
-                            href="#">Exames</a>
-                    </li>
-                    <li class="mb-1">
-                        <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-gray-100 hover:text-orange-500 rounded"
-                            href="#">Convênios</a>
-                    </li>
-                    <li class="mb-1">
-                        <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-gray-100 hover:text-orange-500 rounded"
-                            href="#">Unidades</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="mt-4 px-8 border-t border-gray-200">
-                <div class="pt-6 flex flex-col space-y-2">
-                    <button
-                        class=" p-1 relative flex h-10 w-auto space-x-2 items-center justify-center border border-orange-500 rounded-md overflow-hidden bg-white text-orange-500 transition-all hover:text-white hover:bg-orange-500">
-                        <svg class="relative w-auto h-6" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                        </svg>
-                        <span class="relative">Contate-nos</span>
-                    </button>
-                    <button
-                        class="p-1 px-2 relative flex h-10 w-auto space-x-2 items-center justify-center rounded-md overflow-hidden bg-green text-white transition-all duration-200 hover:scale-110">
-                        <svg class="relative w-auto h-6" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
-                        </svg>
-                        <span class="relative">Resultados</span>
-                    </button>
                 </div>
-            </div>
-        </nav>
-    </div>
-
-    <!-- Carrossel de imagens -->
-    <div id="carouselExampleCrossfade"
-        class="relative sm:h-2/6 md:h-3/5 w-full overflow-hidden border-b-2 border-gray-300 shadow-md "
-        data-twe-carousel-init data-twe-ride="carousel">
-
-        <!--Carousel items-->
-        <div class="relative w-full h-auto overflow-hidden after:clear-both after:block after:content-['']">
-            <!--First item-->
-            <div class="relative float-left -mr-[100%] w-full !transform-none opacity-0 transition-opacity duration-[200ms] ease-in-out motion-reduce:transition-none"
-                data-twe-carousel-fade data-twe-carousel-item data-twe-carousel-active>
-                <img src="https://mdbcdn.b-cdn.net/img/new/slides/041.webp" class="block w-full object-cover"
-                    alt="Wild Landscape" />
-            </div>
-            <!--Second item-->
-            <div class="relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[200ms] ease-in-out motion-reduce:transition-none"
-                data-twe-carousel-fade data-twe-carousel-item>
-                <img src="https://mdbcdn.b-cdn.net/img/new/slides/042.webp" class="block w-full object-cover"
-                    alt="Camera" />
-            </div>
-            <!--Third item-->
-            <div class="relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[200ms] ease-in-out motion-reduce:transition-none"
-                data-twe-carousel-fade data-twe-carousel-item>
-                <img src="https://mdbcdn.b-cdn.net/img/new/slides/043.webp" class="block w-full object-cover"
-                    alt="Exotic Fruits" />
+            </nav>
+    
+        </header>
+    
+        <!-- [Ativado na responsividade] Div "Hamburguer menu" oculto -->
+        <div class="navbar-menu relative z-50 hidden">
+            <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+            <nav
+                class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
+                <div class="w-full flex flex-col mb-6 border-b border-gray-200">
+    
+                    <button class="flex justify-end w-full navbar-close">
+                        <svg class="h-6 w-6 text-gray-400 cursor-pointer bg-gray-200 rounded-md"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                            </path>
+                        </svg>
+                    </button>
+    
+                    <a href="https://flowbite.com/" class="flex flex-col justify-center items-center pb-4 lg:mb-0">
+                            <img src="../site-labcardio-vue/src/img/png-lab.png" class="h-20 pb-2" alt="ícone-lab">
+                            <div class="flex flex-col items-center">
+                                <span class=" text-4xl lg:text-4xl font-extrabold text-Cinza-1 font-madimi scale-y-125">LAB<span
+                                    class="text-transparent bg-clip-text bg-gradient-to-r to-Laranja-4 from-Laranja-2 scale-y-125">CARDIO</span></span>
+                                <p class="text-xs font-semibold text-Cinza-1 flex flex-nowrap">
+                                    Laboratório de
+                                    análises clínicas</p>
+                                
+                            </div>
+                        </a>
+                </div>
+    
+                <div>
+                    <ul class="border-l-4 border-Laranja-3 rounded-sm">
+                        <li class="mb-1">
+                            <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-gray-100 hover:text-orange-500 rounded"
+                                href="#">Página Inicial</a>
+                        </li>
+                        <li class="mb-1">
+                            <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-gray-100 hover:text-orange-500 rounded"
+                                href="#">Institucional</a>
+                        </li>
+                        <li class="mb-1">
+                            <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-gray-100 hover:text-orange-500 rounded"
+                                href="#">Exames</a>
+                        </li>
+                        <li class="mb-1">
+                            <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-gray-100 hover:text-orange-500 rounded"
+                                href="#">Convênios</a>
+                        </li>
+                        <li class="mb-1">
+                            <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-gray-100 hover:text-orange-500 rounded"
+                                href="#">Unidades</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mt-4 px-8 border-t border-gray-200">
+                    <div class="pt-6 flex flex-col space-y-2">
+                        <button
+                            class=" p-1 relative flex h-10 w-auto space-x-2 items-center justify-center border border-orange-500 rounded-md overflow-hidden bg-white text-orange-500 transition-all hover:text-white hover:bg-orange-500">
+                            <svg class="relative w-auto h-6" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                            </svg>
+                            <span class="relative">Contate-nos</span>
+                        </button>
+                        <button
+                            class="p-1 px-2 relative flex h-10 w-auto space-x-2 items-center justify-center rounded-md overflow-hidden bg-green text-white transition-all duration-200 hover:scale-110">
+                            <svg class="relative w-auto h-6" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+                            </svg>
+                            <span class="relative">Resultados</span>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    
+        <!-- Carrossel de imagens -->
+        <div id="carouselExampleCrossfade"
+            class="relative w-full overflow-hidden border-b-2 border-gray-300 shadow-md  h-auto"
+            data-twe-carousel-init data-twe-ride="carousel">
+    
+            <!--Carousel items-->
+            <div class="relative w-full h-full overflow-hidden after:clear-both after:block after:content-['']">
+                <!--First item-->
+                <div class="relative float-left -mr-[100%] w-full !transform-none opacity-0 transition-opacity duration-[200ms] ease-in-out motion-reduce:transition-none"
+                    data-twe-carousel-fade data-twe-carousel-item data-twe-carousel-active>
+                    <img src="https://mdbcdn.b-cdn.net/img/new/slides/041.webp" class="block w-full lg:h-96 object-cover h-60"
+                        alt="Wild Landscape" />
+                </div>
+                <!--Second item-->
+                <div class="relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[200ms] ease-in-out motion-reduce:transition-none"
+                    data-twe-carousel-fade data-twe-carousel-item>
+                    <img src="https://mdbcdn.b-cdn.net/img/new/slides/042.webp" class="block w-full lg:h-96 object-cover h-60"
+                        alt="Camera" />
+                </div>
+                <!--Third item-->
+                <div class="relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[200ms] ease-in-out motion-reduce:transition-none"
+                    data-twe-carousel-fade data-twe-carousel-item>
+                    <img src="https://mdbcdn.b-cdn.net/img/new/slides/043.webp" class="block w-full lg:h-96 object-cover h-60"
+                        alt="Exotic Fruits" />
+                </div>
             </div>
         </div>
-    </div>
-
-    <!--Sessão de Cards -->
-    <div class="flex justify-center relative w-full border-2">
-        <div class="z-10 absolute h-1 w-full bg-gradient-to-r to-Laranja-2 from-Laranja-4 rounded-full"></div>
-        <img src="../site-labcardio-vue/src/img/5367739.jpg" alt="" class="absolute opacity-80 w-full h-full object-cover">
-        <!--Cards -->
-        <div
-            class="z-10 container relative w-screen flex flex-col sm:space-y-2 lg:space-y-0 items-center pt-6 lg:flex-row lg:justify-evenly lg:-top-16 ">
-
-            <!--Card 2-->
+    
+        <!--Sessão de Cards -->
+        <div class="flex justify-center relative w-full border-2">
+            <div class="z-10 absolute h-1 w-full bg-gradient-to-r to-Laranja-2 from-Laranja-4 rounded-full"></div>
+            <img src="../site-labcardio-vue/src/img/5367739.jpg" alt="" class="absolute opacity-80 w-full h-full object-cover">
+            <!--Cards -->
             <div
-                class="flex flex-col itens-center pt-4 justify-center bg-white rounded-md border cursor-pointer transform duration-500 shadow-md max-w-sm hover:-translate-y-1 hover:shadow-2xl h-96 lg:w-72 xl:w-96 ">
-                <svg class="w-14 h-14 text-orange-500 self-center" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                    width="24" height="24" fill="none" viewBox="0 0 24 24">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M15 4h3a1 1 0 0 1 1 1v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h3m0 3h6m-6 5h6m-6 4h6M10 3v4h4V3h-4Z" />
-                </svg>
-
-
-                <h1
-                    class="p-4 text-center text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r to-Laranja-2 from-Laranja-4">
-                    Resultados Online
-                </h1>
-
-
-
-                <div>
-                    <div class="flex items-center justify-center mb-6">
-                        <div class="h-1 w-16 bg-gradient-to-r to-Laranja-2 from-Laranja-4 rounded-full"></div>
-                    </div>
-                    <h2 class="p-4 text-center text-gray-500 font-semibold"> Acesse seus resultados de exames de forma
-                        rápida e online</h2>
-                    <div class="p-4">
-                        <a href="">
-                            <button
-                                class="w-full p-0.5 relative items-center mb-2 me-2 overflow-hidden text-base font-semibold text-Laranja-3 rounded-lg group bg-gradient-to-br from-Laranja-4 to-Laranja-2 focus:ring-4 focus:outline-none focus:ring-Laranja-3">
-                                <span
-                                    class="flex flex-row justify-center w-full relative px-5 py-2.5 transition-all ease-in duration-200 bg-white rounded-md group-hover:bg-opacity-0 group-hover:text-white">
-                                    ACESSAR
-                                    <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                        width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                            stroke-width="2" d="m9 5 7 7-7 7" />
-                                    </svg>
-                                </span>
-                            </button>
-                        </a>
+                class="z-10 container relative w-screen flex flex-col sm:space-y-2 lg:space-y-0 items-center pt-6 lg:flex-row lg:justify-evenly lg:-top-16 ">
+    
+                <!--Card 2-->
+                <div
+                    class="flex flex-col itens-center pt-4 justify-center bg-white rounded-md border cursor-pointer transform duration-500 shadow-md max-w-sm hover:-translate-y-1 hover:shadow-2xl h-96 lg:w-72 xl:w-96 ">
+                    <svg class="w-14 h-14 text-orange-500 self-center" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M15 4h3a1 1 0 0 1 1 1v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h3m0 3h6m-6 5h6m-6 4h6M10 3v4h4V3h-4Z" />
+                    </svg>
+    
+    
+                    <h1
+                        class="p-4 text-center text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r to-Laranja-2 from-Laranja-4">
+                        Resultados Online
+                    </h1>
+    
+    
+    
+                    <div>
+                        <div class="flex items-center justify-center mb-6">
+                            <div class="h-1 w-16 bg-gradient-to-r to-Laranja-2 from-Laranja-4 rounded-full"></div>
+                        </div>
+                        <h2 class="p-4 text-center text-gray-500 font-semibold"> Acesse seus resultados de exames de forma
+                            rápida e online</h2>
+                        <div class="p-4">
+                            <a href="">
+                                <button
+                                    class="w-full p-0.5 relative items-center mb-2 me-2 overflow-hidden text-base font-semibold text-Laranja-3 rounded-lg group bg-gradient-to-br from-Laranja-4 to-Laranja-2 focus:ring-4 focus:outline-none focus:ring-Laranja-3">
+                                    <span
+                                        class="flex flex-row justify-center w-full relative px-5 py-2.5 transition-all ease-in duration-200 bg-white rounded-md group-hover:bg-opacity-0 group-hover:text-white">
+                                        ACESSAR
+                                        <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                            width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                                stroke-width="2" d="m9 5 7 7-7 7" />
+                                        </svg>
+                                    </span>
+                                </button>
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <!--Card 2-->
-            <div
-                class="flex flex-col itens-center pt-4 justify-center bg-white rounded-md border cursor-pointer transform duration-500 shadow-md max-w-sm hover:-translate-y-1 hover:shadow-2xl h-96 lg:w-72 xl:w-96 ">
-                <svg class="w-14 h-14 text-orange-500 self-center" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                    width="24" height="24" fill="none" viewBox="0 0 24 24">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M15 4h3a1 1 0 0 1 1 1v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h3m0 3h6m-6 5h6m-6 4h6M10 3v4h4V3h-4Z" />
-                </svg>
-
-
-                <h1
-                    class="p-4 text-center text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r to-Laranja-2 from-Laranja-4">
-                    Resultados Online
-                </h1>
-
-
-
-                <div>
-                    <div class="flex items-center justify-center mb-6">
-                        <div class="h-1 w-16 bg-gradient-to-r to-Laranja-2 from-Laranja-4 rounded-full"></div>
-                    </div>
-                    <h2 class="p-4 text-center text-gray-500 font-semibold"> Acesse seus resultados de exames de forma
-                        rápida e online</h2>
-                    <div class="p-4">
-                        <a href="">
-                            <button
-                                class="w-full p-0.5 relative items-center mb-2 me-2 overflow-hidden text-base font-semibold text-Laranja-3 rounded-lg group bg-gradient-to-br from-Laranja-4 to-Laranja-2 focus:ring-4 focus:outline-none focus:ring-Laranja-3">
-                                <span
-                                    class="flex flex-row justify-center w-full relative px-5 py-2.5 transition-all ease-in duration-200 bg-white rounded-md group-hover:bg-opacity-0 group-hover:text-white">
-                                    ACESSAR
-                                    <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                        width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                            stroke-width="2" d="m9 5 7 7-7 7" />
-                                    </svg>
-                                </span>
-                            </button>
-                        </a>
+    
+                <!--Card 2-->
+                <div
+                    class="flex flex-col itens-center pt-4 justify-center bg-white rounded-md border cursor-pointer transform duration-500 shadow-md max-w-sm hover:-translate-y-1 hover:shadow-2xl h-96 lg:w-72 xl:w-96 ">
+                    <svg class="w-14 h-14 text-orange-500 self-center" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M15 4h3a1 1 0 0 1 1 1v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h3m0 3h6m-6 5h6m-6 4h6M10 3v4h4V3h-4Z" />
+                    </svg>
+    
+    
+                    <h1
+                        class="p-4 text-center text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r to-Laranja-2 from-Laranja-4">
+                        Resultados Online
+                    </h1>
+    
+    
+    
+                    <div>
+                        <div class="flex items-center justify-center mb-6">
+                            <div class="h-1 w-16 bg-gradient-to-r to-Laranja-2 from-Laranja-4 rounded-full"></div>
+                        </div>
+                        <h2 class="p-4 text-center text-gray-500 font-semibold"> Acesse seus resultados de exames de forma
+                            rápida e online</h2>
+                        <div class="p-4">
+                            <a href="">
+                                <button
+                                    class="w-full p-0.5 relative items-center mb-2 me-2 overflow-hidden text-base font-semibold text-Laranja-3 rounded-lg group bg-gradient-to-br from-Laranja-4 to-Laranja-2 focus:ring-4 focus:outline-none focus:ring-Laranja-3">
+                                    <span
+                                        class="flex flex-row justify-center w-full relative px-5 py-2.5 transition-all ease-in duration-200 bg-white rounded-md group-hover:bg-opacity-0 group-hover:text-white">
+                                        ACESSAR
+                                        <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                            width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                                stroke-width="2" d="m9 5 7 7-7 7" />
+                                        </svg>
+                                    </span>
+                                </button>
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <!--Card 3-->
-            <div
-                class="flex flex-col itens-center pt-4 justify-center bg-white rounded-md border cursor-pointer transform duration-500 shadow-md max-w-sm hover:-translate-y-1 hover:shadow-2xl h-96 lg:w-72 xl:w-96 ">
-                <svg class="w-14 h-14 text-orange-500 self-center" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                    width="24" height="24" fill="none" viewBox="0 0 24 24">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="m8.032 12 1.984 1.984 4.96-4.96m4.55 5.272.893-.893a1.984 1.984 0 0 0 0-2.806l-.893-.893a1.984 1.984 0 0 1-.581-1.403V7.04a1.984 1.984 0 0 0-1.984-1.984h-1.262a1.983 1.983 0 0 1-1.403-.581l-.893-.893a1.984 1.984 0 0 0-2.806 0l-.893.893a1.984 1.984 0 0 1-1.403.581H7.04A1.984 1.984 0 0 0 5.055 7.04v1.262c0 .527-.209 1.031-.581 1.403l-.893.893a1.984 1.984 0 0 0 0 2.806l.893.893c.372.372.581.876.581 1.403v1.262a1.984 1.984 0 0 0 1.984 1.984h1.262c.527 0 1.031.209 1.403.581l.893.893a1.984 1.984 0 0 0 2.806 0l.893-.893a1.985 1.985 0 0 1 1.403-.581h1.262a1.984 1.984 0 0 0 1.984-1.984V15.7c0-.527.209-1.031.581-1.403Z" />
-                </svg>
-
-
-                <h1
-                    class="p-4 text-center text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r to-Laranja-2 from-Laranja-4">
-                    Laboratório Confiável
-                </h1>
-
-
-
-                <div>
-                    <div class="flex items-center justify-center mb-6">
-                        <div class="h-1 w-16 bg-gradient-to-r to-Laranja-2 from-Laranja-4 rounded-full"></div>
-                    </div>
-                    <h2 class="p-4 text-center text-gray-500 font-semibold"> Conheça nossa história, princípios e
-                        certificações</h2>
-                    <div class="p-4">
-                        <a href="">
-                            <button
-                                class="w-full p-0.5 relative items-center mb-2 me-2 overflow-hidden text-base font-semibold text-Laranja-3 rounded-lg group bg-gradient-to-br from-Laranja-4 to-Laranja-2 focus:ring-4 focus:outline-none focus:ring-Laranja-3">
-                                <span
-                                    class="flex flex-row justify-center w-full relative px-5 py-2.5 transition-all ease-in duration-200 bg-white rounded-md group-hover:bg-opacity-0 group-hover:text-white">
-                                    CONHECER
-                                    <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                        width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                            stroke-width="2" d="m9 5 7 7-7 7" />
-                                    </svg>
-                                </span>
-                            </button>
-                        </a>
+    
+                <!--Card 3-->
+                <div
+                    class="flex flex-col itens-center pt-4 justify-center bg-white rounded-md border cursor-pointer transform duration-500 shadow-md max-w-sm hover:-translate-y-1 hover:shadow-2xl h-96 lg:w-72 xl:w-96 ">
+                    <svg class="w-14 h-14 text-orange-500 self-center" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="m8.032 12 1.984 1.984 4.96-4.96m4.55 5.272.893-.893a1.984 1.984 0 0 0 0-2.806l-.893-.893a1.984 1.984 0 0 1-.581-1.403V7.04a1.984 1.984 0 0 0-1.984-1.984h-1.262a1.983 1.983 0 0 1-1.403-.581l-.893-.893a1.984 1.984 0 0 0-2.806 0l-.893.893a1.984 1.984 0 0 1-1.403.581H7.04A1.984 1.984 0 0 0 5.055 7.04v1.262c0 .527-.209 1.031-.581 1.403l-.893.893a1.984 1.984 0 0 0 0 2.806l.893.893c.372.372.581.876.581 1.403v1.262a1.984 1.984 0 0 0 1.984 1.984h1.262c.527 0 1.031.209 1.403.581l.893.893a1.984 1.984 0 0 0 2.806 0l.893-.893a1.985 1.985 0 0 1 1.403-.581h1.262a1.984 1.984 0 0 0 1.984-1.984V15.7c0-.527.209-1.031.581-1.403Z" />
+                    </svg>
+    
+    
+                    <h1
+                        class="p-4 text-center text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r to-Laranja-2 from-Laranja-4">
+                        Laboratório Confiável
+                    </h1>
+    
+    
+    
+                    <div>
+                        <div class="flex items-center justify-center mb-6">
+                            <div class="h-1 w-16 bg-gradient-to-r to-Laranja-2 from-Laranja-4 rounded-full"></div>
+                        </div>
+                        <h2 class="p-4 text-center text-gray-500 font-semibold"> Conheça nossa história, princípios e
+                            certificações</h2>
+                        <div class="p-4">
+                            <a href="">
+                                <button
+                                    class="w-full p-0.5 relative items-center mb-2 me-2 overflow-hidden text-base font-semibold text-Laranja-3 rounded-lg group bg-gradient-to-br from-Laranja-4 to-Laranja-2 focus:ring-4 focus:outline-none focus:ring-Laranja-3">
+                                    <span
+                                        class="flex flex-row justify-center w-full relative px-5 py-2.5 transition-all ease-in duration-200 bg-white rounded-md group-hover:bg-opacity-0 group-hover:text-white">
+                                        CONHECER
+                                        <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                            width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                                stroke-width="2" d="m9 5 7 7-7 7" />
+                                        </svg>
+                                    </span>
+                                </button>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
